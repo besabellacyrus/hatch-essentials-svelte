@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "Hatch",
+  "description": "Hatch Essentials",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",

@@ -4,7 +4,7 @@
 
 <style lang="scss">
   nav {
-    border-bottom: 1px solid rgba(255, 62, 0, 0.1);
+    // border-bottom: 1px solid rgba(255, 62, 0, 0.1);
     font-weight: 300;
     padding: 0 1em;
   }
@@ -46,10 +46,46 @@
     padding: 1em 0.5em;
     display: block;
   }
+  .nav-mobile {
+    height: 5rem;
+    svg {
+      height: 1.7rem;
+    }
+    @media screen and (min-width: 426px) {
+      display: none;
+    }
+  }
+  .nav-pc {
+    height: 5rem;
+    @media screen and (max-width: 425px) {
+      display: none;
+    }
+  }
 </style>
 
-<nav>
-  <ul>
+<nav class="main-nav">
+  <div class="nav-mobile flex items-center justify-between">
+    <div>Hatch Essenstials</div>
+    <svg
+      class="fill-current"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24">
+      <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+    </svg>
+  </div>
+  <div class="nav-pc flex items-center justify-between">
+    <div>Hatch Essenstials</div>
+    <div>
+      <ul class="flex">
+        <li class="mr-5">WELLNESS LIFESTYLE</li>
+        <li class="mr-5">ABOUT</li>
+        <li class="mr-5">THE BUSINESS</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- <nav>
+  <ul class="nav-pc">
     <li>
       <a aria-current={segment === undefined ? 'page' : undefined} href=".">
         home
@@ -61,8 +97,6 @@
       </a>
     </li>
 
-    <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
     <li>
       <a
         rel="prefetch"
@@ -72,4 +106,4 @@
       </a>
     </li>
   </ul>
-</nav>
+</nav> -->
