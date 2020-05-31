@@ -37,7 +37,6 @@
 
 <style>
   h1,
-  figure,
   p {
     text-align: center;
     margin: 0 auto;
@@ -48,16 +47,6 @@
     text-transform: uppercase;
     font-weight: 700;
     margin: 0 0 0.5em 0;
-  }
-
-  figure {
-    margin: 0 0 1em 0;
-  }
-
-  img {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 0 1em 0;
   }
 
   p {
@@ -77,10 +66,25 @@
 
 <h1>Great success!</h1>
 
-<figure>
-  <img alt="Success Kid" src="successkid.jpg" />
-  <figcaption>Have fun with Sapper!</figcaption>
-</figure>
+{#await $todos}
+  <p>Loading...</p>
+{:then result}
+  {#if result.data}
+    <ul>
+      {#each result.data.todos.data as todo}
+        <li>
+          <p>
+            <strong>ID: {todo.id}</strong>
+            {todo.title}
+            <input type="checkbox" checked={todo.completed} />
+          </p>
+        </li>
+      {/each}
+    </ul>
+  {:else}
+    <p>ERROR!!</p>
+  {/if}
+{/await}
 
 <p>
   <strong>
