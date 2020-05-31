@@ -6,6 +6,8 @@ body {
 	font-size: 14px;
 	line-height: 1.5;
 	color: #333;
+	-webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
 }
 
 code {

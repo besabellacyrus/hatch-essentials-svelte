@@ -46,18 +46,25 @@
     padding: 1em 0.5em;
     display: block;
   }
+  nav {
+    background-color: #fbf6f4;
+    ul {
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+  }
   .nav-mobile {
     height: 5rem;
     svg {
       height: 1.7rem;
     }
-    @media screen and (min-width: 426px) {
+    @media screen and (min-width: 598px) {
       display: none;
     }
   }
   .nav-pc {
-    height: 5rem;
-    @media screen and (max-width: 425px) {
+    height: 7rem;
+    @media screen and (max-width: 599px) {
       display: none;
     }
   }
