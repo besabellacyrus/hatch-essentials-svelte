@@ -17,6 +17,7 @@
  
   li {
      text-align: center;
+     margin-top: 2rem;
      svg {
         margin: 0 auto;
         width: 3rem;
@@ -64,7 +65,7 @@
     transition: 300ms all; 
     height: 2rem;
     position: relative; 
-    top: 0.82rem;
+    top: -0.18rem;
       &:active {
         opacity: 1;
       }
