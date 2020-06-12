@@ -45,13 +45,13 @@ p {
 }
  
 h1, h2, h3, h4 {
-  line-height: 1.6em;
+  line-height: 1em;
   padding: 1rem;
-  white-space: pre-wrap;
+  // white-space: pre-wrap;
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 60px;
   font-family: 'Playfair Display', serif;
   color: $h1-color;
   font-weight: bold;
@@ -85,6 +85,25 @@ h3 {
 
 .module {
   font-size: 1.1rem;
+}
+
+.hatch-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  h1 {
+    position: relative;
+    &:after {
+      content: "";
+      border-bottom: 3px solid #3e99c4;
+      position: absolute;
+      bottom: 0;
+      height: 1rem;
+      width: 2rem;
+      left: 1rem;
+    }
+  }
 }
 
 .he-row *:not(h1):not(h2):not(h3) {
