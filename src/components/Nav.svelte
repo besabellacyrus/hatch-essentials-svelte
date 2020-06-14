@@ -17,7 +17,7 @@
  
   li {
      text-align: center;
-     margin-top: 2rem;
+     margin-top: 0.4rem;
      svg {
         margin: 0 auto;
         width: 3rem;
@@ -55,7 +55,7 @@
   }
   .nav-pc {
     height: 5rem;
-    margin-top: 1rem;
+    /*margin-top: 1rem;*/
     @media screen and (max-width: 599px) {
       display: none;
     }
@@ -88,12 +88,28 @@
   .nav-item-6 {
     color: #267d75;
   }
+  .main-nav {
+    max-width: 1900px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .hatch-nav {
+    margin-top: 2.34rem;
+  }
+  img.logo {
+    @media screen and (max-width: 768px) {
+      height: 3rem;
+    }
+  }
 </style>
 
-<nav class="main-nav container mx-auto">
+<nav class="main-nav">
   <div class="nav-mobile flex items-center justify-between">
     <div>
-      <img src="/logo.svg" alt="Hatch Essentials" />
+      <a href=".">
+        <img class="logo" src="/logo.svg" alt="Hatch Essentials" />
+      </a>
     </div>
     <svg
       class="fill-current"
@@ -105,11 +121,11 @@
   <div class="nav-pc flex items-center justify-between">
     <div class="flex items-center">
       <a href=".">
-        <img src="/logo.svg" alt="Hatch Eessentials"/>
+        <img class="logo" src="/logo.svg" alt="Hatch Eessentials"/>
       </a>
     </div>
     <div>
-      <ul class="flex">
+      <ul class="flex hatch-nav">
         <li>
           <a href="."  aria-current={segment === undefined ? 'page' : undefined}>Home
           {#if segment === undefined}

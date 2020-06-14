@@ -2,7 +2,7 @@
   export let content;
   export let bgColor; 
 </script>
-<style>
+<style lang="scss">
 	.he-row {
 		max-width: 1900px;
 		margin: 0 auto;

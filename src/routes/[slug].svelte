@@ -39,10 +39,9 @@
 <svelte:head>
   <title>{ slug }</title>
 </svelte:head>
-
-<div>
-  {#await cache}
-  <p>Loading...</p>
+ 
+{#await cache}
+<p>Loading...</p>
 {:then data}
   {#if data.data}
     {#each data.data['hatch_PageBy']['page']['fc'] as page, i}
@@ -51,5 +50,4 @@
   {:else}
     <p>ERROR!!</p>
   {/if}
-{/await}
-</div>
+{/await} 
