@@ -41,7 +41,7 @@
 </svelte:head>
  
 {#await cache}
-<p>Loading...</p>
+  <p>Loading...</p>
 {:then data}
   {#if data.data}
     {#each data.data['hatch_PageBy']['page']['fc'] as page, i}
