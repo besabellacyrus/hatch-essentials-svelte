@@ -105,11 +105,18 @@ html, body {
 		}
 	}
 }
-
+footer {
+	@media screen and (max-width: 425px) {
+			text-align: center;
+		}
+}
 .hatch-instagram {
 	display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 1rem;
+  @media screen and (max-width: 425px) {
+		grid-template-columns: auto;
+	}
   p {
   	font-family: 'PlayFairRegular', serif;
   	font-style: normal;
@@ -119,12 +126,20 @@ html, body {
   	display: grid;
   	grid-template-columns: 1fr 1fr;
   	grid-gap: 1rem;
+  	@media screen and (max-width: 425px) {
+  		grid-template-columns: auto;
+  	}
   }
   .hatch-logo {
-  	align-items: flex-start;
     display: flex;
-    flex-direction: row-reverse;
     padding: 1rem;
+    @media screen and (min-width: 425px) {
+			align-items: flex-start;
+    	flex-direction: row-reverse;
+		}
+		@media screen and (max-width: 425px) {
+			justify-content: center;
+		}
   }
   .instagram-items {
   	display: grid;
