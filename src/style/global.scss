@@ -105,3 +105,33 @@ html, body {
 		}
 	}
 }
+
+.hatch-instagram {
+	display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1rem;
+  p {
+  	font-family: 'PlayFairRegular', serif;
+  	font-style: normal;
+  	border-right: 1px solid #e3e3e3;
+  }
+  .left-section {
+  	display: grid;
+  	grid-template-columns: 1fr 1fr;
+  	grid-gap: 1rem;
+  }
+  .hatch-logo {
+  	align-items: flex-start;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1rem;
+  }
+  .instagram-items {
+  	display: grid;
+  	grid-template-columns: 1fr 1fr 1fr;
+  	padding: 1rem;
+  	div {
+  		padding: 0.5rem;
+  	}
+  }
+}
