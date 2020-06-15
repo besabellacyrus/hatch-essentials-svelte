@@ -228,12 +228,11 @@ template {
  * Removes the default spacing and border for appropriate elements.
  */
 
-blockquote,
+
 h1,
 h2,
 h4,
 hr,
-figure,
 p,
 pre {
   margin: 0;
