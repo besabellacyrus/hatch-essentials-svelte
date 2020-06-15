@@ -228,10 +228,12 @@ template {
  * Removes the default spacing and border for appropriate elements.
  */
 
-
+blockquote,
 h1,
 h2,
+h4,
 hr,
+figure,
 p,
 pre {
   margin: 0;
@@ -323,7 +325,8 @@ img {
 }
 
 h1,
-h2 {
+h2,
+h4 {
   font-size: inherit;
   font-weight: inherit;
 }
@@ -443,6 +446,10 @@ img {
 
 .fill-current {
   fill: currentColor;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .transform {

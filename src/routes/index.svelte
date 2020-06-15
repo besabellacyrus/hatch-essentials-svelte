@@ -40,7 +40,9 @@
 </svelte:head>
 
 {#await $pages}
-  <p>Loading...</p>
+  <div class="loader">
+    <p>Loading...</p>
+  </div>
 {:then data}
   {#if data.data}
     {#each data.data['hatch_PageBy']['page']['fc'] as page, i}

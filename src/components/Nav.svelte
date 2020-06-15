@@ -36,6 +36,10 @@
   a {
     text-decoration: none; 
     display: block;
+    transition: all 300ms;
+    &:hover {
+      color: rgba(0,0,0,0.7);
+    }
   }
   nav {
     background-color: #fbf6f4;
@@ -66,9 +70,12 @@
     height: 2rem;
     position: relative; 
     top: -0.18rem;
-      &:active {
-        opacity: 1;
-      }
+    &:active {
+      opacity: 1;
+    }
+    &:hover {
+      opacity: 1;
+    }
   }
   .nav-item-1 { 
     color: #ac335e;
@@ -196,7 +203,7 @@
             </a>
         </li>
         <li>
-          <a aria-current={segment === 'begin-now' ? 'page' : undefined} href="/begin-now" >Begin Now
+          <a aria-current={segment === 'begin-now' ? 'page' : undefined} href="https://www.youngliving.com/vo/?fbclid=IwAR04XTDfCKsSlbBwdWnUz881IpMz220ypID2DHWJLjnkMCmzGFoopN4v0wo#/signup/new-start?sponsorid=14065507&enrollerid=14065507&isocountrycode=PH&culture=en-PH&type=member" >Begin Now
             
             {#if segment === 'begin-now'}
                 <svg class="fill-current nav-item nav-item-6" xmlns="http://www.w3.org/2000/svg" width="68" height="40.195" viewBox="0 0 68 40.195">
