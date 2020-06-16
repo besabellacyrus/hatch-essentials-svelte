@@ -18,18 +18,22 @@ $home: #ac335e;
 @font-face {
   font-family: PlayFairBold;
   src: url('/fonts/PlayfairDisplay-Bold.ttf');
+  font-display: swap;
 }
 @font-face {
   font-family: PlayFairRegular;
   src: url('/fonts/PlayfairDisplay-Regular.ttf');
+  font-display: swap;
 }
 @font-face {
   font-family: MontserratLight;
   src: url('/fonts/Montserrat-Light.ttf');
+  font-display: swap;
 }
 @font-face {
   font-family: MontserratRegular;
   src: url('/fonts/Montserrat-Regular.ttf');
+  font-display: swap;
 }
 
 html {
