@@ -28,7 +28,6 @@
   //   query: PAGE,
   //   variables: { slug }
   // });
-
 </script>
 
 <style>

@@ -26,7 +26,7 @@
     </div>
   </section>
 </div>
-  <div class="container mx-auto">
+  <div class="container mx-auto text-center">
     <span style="font-size: 0.7rem; white-space:pre-wrap;">
       Copyright © 2020 Hatch Essentials
     </span>

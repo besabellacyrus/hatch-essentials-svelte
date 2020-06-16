@@ -1,6 +1,6 @@
 import { gql } from 'apollo-boost';
-export const PAGE = gql`
-	query MyQuery($slug: String!) {
+export const POST = gql`
+	query MyQuery($slug: ID!) {
   	post(id: $slug, idType: SLUG) {
 	    categories {
 	      nodes {

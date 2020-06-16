@@ -7,6 +7,10 @@ $h3-color: #c16995;
 $p-color: #959595;
 $home: #ac335e;
 
+.container {
+  max-width: 1300px;
+}
+
 @mixin letter-spacing($spacing) { 
   letter-spacing: ($spacing / 1000) * 1em; 
 }
@@ -125,13 +129,20 @@ h3 {
   word-wrap: break-word;
 }
 
+.he-row {
+  // max-width: 1300px;
+  // margin: 0 auto;
+}
+
 .spacer {
   height: 5rem;
   @media screen and (max-width: 425px) {
     height: 1rem;
   }
 }
-
+.container {
+  max-width: 1300px;
+}
 
 @media screen and (max-width: 640px) {
   .he-row .container {
