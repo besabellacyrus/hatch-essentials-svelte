@@ -1,6 +1,4 @@
-<script>
-  export let segment;
-</script>
+
 
 <style lang="scss">
   nav {
@@ -49,7 +47,7 @@
     }
   }
   .nav-mobile {
-    height: 5rem;
+    height: 8rem;
     svg {
       height: 3rem;
     }
@@ -109,8 +107,86 @@
       height: 4.5rem;
     }
   }
+
+  .mobile-nav-wrapper {
+    position: fixed;
+    z-index: 9999;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 0 1rem;
+    .menus {
+      display: grid;
+      grid-gap: 3rem;
+      margin-top: 7rem;
+    }
+  }
 </style>
 
+<script>
+  import { fade, fly } from 'svelte/transition'
+  export let segment;
+  let open = false;
+  function handleOpenMenu () {
+    open = !open;
+    console.log({ open })
+  } 
+</script>
+{#if open}
+<div transition:fly={{ x: -200 }} class="mobile-nav-wrapper">
+  <div class="nav-mobile flex items-center justify-between">
+    <div>
+      <a href=".">
+        <img class="logo" src="/logo.svg" alt="Hatch Essentials" />
+      </a>
+    </div>
+    <div on:click={handleOpenMenu}>
+       <svg class="fill-current"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"> 
+        {#if open }
+          <path transition:fly={{ x: -100 }} d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/>
+        {:else}
+          <path transition:fly={{ x: 100 }} d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+        {/if}
+      </svg>
+    </div>
+  </div> 
+  <div class="container mx-auto text-center">
+    <div class="menus">
+      <div>
+        <a on:click={handleOpenMenu} href=".">
+          Home
+        </a>
+      </div>
+      <div>
+        <a on:click={handleOpenMenu} href="essential-oils-101">
+          Essential Oils 101
+        </a>
+      </div>
+      <div>
+        <a on:click={handleOpenMenu} href="pursue-your-dreams">
+          Pursue Your Dreams
+        </a>
+      </div>
+      <div>
+        <a on:click={handleOpenMenu} href="about-hatch">
+          About Hatch
+        </a>
+      </div>
+      <div>
+        <a on:click={handleOpenMenu} href="the-blog">
+          The Blog
+        </a>
+      </div>
+      <div>
+        <a href="https://www.youngliving.com/vo/?fbclid=IwAR04XTDfCKsSlbBwdWnUz881IpMz220ypID2DHWJLjnkMCmzGFoopN4v0wo#/signup/new-start?sponsorid=14065507&enrollerid=14065507&isocountrycode=PH&culture=en-PH&type=member">
+          Begin Now
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{/if}
 <nav class="main-nav">
   <div class="container mx-auto">
     <div class="nav-mobile flex items-center justify-between">
@@ -119,12 +195,15 @@
           <img class="logo" src="/logo.svg" alt="Hatch Essentials" />
         </a>
       </div>
-      <svg
-        class="fill-current"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24">
-        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-      </svg>
+      <div on:click={handleOpenMenu}>
+         <svg class="fill-current"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"> 
+          {#if open }
+            <path transition:fly={{ x: -100 }} d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/>
+          {:else}
+            <path transition:fly={{ x: 100 }} d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          {/if}
+        </svg>
+      </div>
     </div> 
     <div class="nav-pc flex items-center justify-between">
       <div class="flex items-center">

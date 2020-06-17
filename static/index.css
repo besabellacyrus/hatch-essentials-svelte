@@ -435,6 +435,10 @@ img {
   margin-top: 1.25rem;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .relative {
   position: relative;
 }
