@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import { fadeIn, fadeOut } from '../components/pageFade.js';
 	let show = true;
-	
+
 	onMount(() => {
 		show = false;
 	})
@@ -13,8 +13,7 @@
 </style>
 
 {#if show} 
-	<div class="loader">
-	  <!-- <p>Loading...</p> -->
+	<div class="loader"> 
 	</div>
 	{:else}
 	<div in:fadeIn out:fadeOut>

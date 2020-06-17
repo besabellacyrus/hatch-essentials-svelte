@@ -35,7 +35,7 @@
 </style>
 
 <svelte:head>
-  <title>Hatch Essentials</title>
+  <title>About Hatch</title>
 </svelte:head>
 
 <TransitionWrapper>

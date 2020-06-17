@@ -38,9 +38,16 @@
   <title>{ slug }</title>
 </svelte:head>
 
+<style lang="scss">
+  .content-wrapper {
+    max-width: 36rem;
+    margin: 0 auto;
+  }
+</style>
+
 <section class="container mx-auto">
   <div class="spacer"></div>
-	<div class="mt-5">
+	<div class="mt-5 content-wrapper">
      {#await cache}
       <div class="loader">
         <p>Loading...</p>

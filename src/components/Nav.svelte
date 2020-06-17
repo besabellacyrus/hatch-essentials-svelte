@@ -106,7 +106,7 @@
   }
   img.logo {
     @media screen and (max-width: 768px) {
-      height: 5.5rem;
+      height: 4.5rem;
     }
   }
 </style>
