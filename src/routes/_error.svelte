@@ -31,10 +31,13 @@
 	<title>{status}</title>
 </svelte:head>
 
-<h1>{status}</h1>
+<div class="container mx-auto">
+	<div class="text-center">
+		<h1>{status}</h1>
+		<p>{error.message}</p>
+	</div>
+</div>
 
-<p>{error.message}</p>
-
-{#if dev && error.stack}
+<!-- {#if dev && error.stack}
 	<pre>{error.stack}</pre>
-{/if}
+{/if} -->

@@ -40,9 +40,7 @@
 
 <TransitionWrapper>
 {#await $pages}
-  <div class="loader">
-    <p>Loading...</p>
-  </div>
+  <p>Loading...</p>
 {:then data}
     {#if data.data}
       {#each data.data['hatch_PageBy']['page']['fc'] as page, i}

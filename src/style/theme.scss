@@ -112,7 +112,9 @@ h3 {
     font-size: 20px;
   }
 }
-
+main {
+  min-height: 800px;
+}
 .module {
   font-size: 1.1rem;
 }
@@ -141,8 +143,8 @@ h3 {
 }
 
 .he-row {
-  // max-width: 1300px;
-  // margin: 0 auto;
+  height: 100%;
+  position: relative;
 }
 
 .spacer {

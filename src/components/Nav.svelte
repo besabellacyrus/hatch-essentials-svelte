@@ -51,7 +51,7 @@
   .nav-mobile {
     height: 5rem;
     svg {
-      height: 1.7rem;
+      height: 3rem;
     }
     @media screen and (min-width: 598px) {
       display: none;
@@ -106,7 +106,7 @@
   }
   img.logo {
     @media screen and (max-width: 768px) {
-      height: 3rem;
+      height: 5.5rem;
     }
   }
 </style>
