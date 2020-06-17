@@ -98,6 +98,10 @@
     margin: 0 auto;
     padding-left: 1rem;
     padding-right: 1rem;
+    @media screen and (max-width: 425px) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
   }
   .hatch-nav {
     margin-top: 2.34rem;
@@ -115,12 +119,20 @@
     width: 100%;
     height: 100%;
     background-color: #fff;
-    padding: 0 1rem;
+    padding: 0 2rem;
     .menus {
       display: grid;
       grid-gap: 3rem;
       margin-top: 7rem;
+      h3 {
+        margin: 0 auto;
+        font-size: 1.7rem;
+        font-weight: bold;
+      }
     }
+  }
+  .nav-mobile {
+    color: #7d7d7d;
   }
 </style>
 
@@ -137,16 +149,16 @@
 <div transition:fly={{ x: -200 }} class="mobile-nav-wrapper">
   <div class="nav-mobile flex items-center justify-between">
     <div>
-      <a href=".">
+      <a href="." transition:fade>
         <img class="logo" src="/logo.svg" alt="Hatch Essentials" />
       </a>
     </div>
     <div on:click={handleOpenMenu}>
        <svg class="fill-current"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"> 
         {#if open }
-          <path transition:fly={{ x: -100 }} d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/>
+          <path transition:fade d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z"/>
         {:else}
-          <path transition:fly={{ x: 100 }} d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          <path transition:fade d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
         {/if}
       </svg>
     </div>
@@ -155,32 +167,32 @@
     <div class="menus">
       <div>
         <a on:click={handleOpenMenu} href=".">
-          Home
+          <h3>Home</h3>
         </a>
       </div>
       <div>
         <a on:click={handleOpenMenu} href="essential-oils-101">
-          Essential Oils 101
+          <h3>Essential Oils 101</h3>
         </a>
       </div>
       <div>
         <a on:click={handleOpenMenu} href="pursue-your-dreams">
-          Pursue Your Dreams
+          <h3>Pursue Your Dreams</h3>
         </a>
       </div>
       <div>
         <a on:click={handleOpenMenu} href="about-hatch">
-          About Hatch
+          <h3>About Hatch</h3>
         </a>
       </div>
       <div>
         <a on:click={handleOpenMenu} href="the-blog">
-          The Blog
+          <h3>The Blog</h3>
         </a>
       </div>
       <div>
         <a href="https://www.youngliving.com/vo/?fbclid=IwAR04XTDfCKsSlbBwdWnUz881IpMz220ypID2DHWJLjnkMCmzGFoopN4v0wo#/signup/new-start?sponsorid=14065507&enrollerid=14065507&isocountrycode=PH&culture=en-PH&type=member">
-          Begin Now
+          <h3>Begin Now</h3>
         </a>
       </div>
     </div>
@@ -191,9 +203,11 @@
   <div class="container mx-auto">
     <div class="nav-mobile flex items-center justify-between">
       <div>
-        <a href=".">
+        {#if !open}
+        <a href="." transition:fade >
           <img class="logo" src="/logo.svg" alt="Hatch Essentials" />
         </a>
+        {/if}
       </div>
       <div on:click={handleOpenMenu}>
          <svg class="fill-current"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"> 
