@@ -22,6 +22,7 @@
 	import { restore, query } from "svelte-apollo";
   import DynamicBlock from "../../components/page_elements/DynamicBlock.svelte";
 	import BlogPosts from "../../components/page_elements/BlogPosts.svelte";
+  import TransitionWrapper from '../../components/TransitionWrapper.svelte';
 
 	export let slug;
 	export let cache;
@@ -43,6 +44,7 @@
   <title>The Blog</title>
 </svelte:head>
  
+<TransitionWrapper>
 {#await cache}
   <p>Loading...</p>
 {:then data}
@@ -58,3 +60,4 @@
   {:then data}
     <BlogPosts posts={data} />
 {/await} 
+</TransitionWrapper>

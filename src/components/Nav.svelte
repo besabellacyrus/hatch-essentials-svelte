@@ -128,7 +128,7 @@
     </div> 
     <div class="nav-pc flex items-center justify-between">
       <div class="flex items-center">
-        <a href=".">
+        <a href="." rel="prefetch">
           <img class="logo" src="/logo.svg" alt="Hatch Eessentials"/>
         </a>
       </div>
@@ -150,7 +150,8 @@
           <li>
             <a
               aria-current={segment === 'essential-oils-101' ? 'page' : undefined}
-              href="/essential-oils-101">
+              rel="prefetch"
+              href="essential-oils-101">
               Essential Oils 101
             
               {#if segment === 'essential-oils-101'}
@@ -165,7 +166,7 @@
               </a>
           </li>
           <li>
-            <a aria-current={segment === 'pursue-your-dreams' ? 'page' : undefined} href="/pursue-your-dreams" >Pursue Your Dreams
+            <a aria-current={segment === 'pursue-your-dreams' ? 'page' : undefined} rel="prefetch" href="pursue-your-dreams" >Pursue Your Dreams
             {#if segment === 'pursue-your-dreams'}
                   <svg class="fill-current nav-item nav-item-3" xmlns="http://www.w3.org/2000/svg" width="68" height="40.195" viewBox="0 0 68 40.195">
                     <path id="Path_1233" data-name="Path 1233" d="M67.969,156.383a2.241,2.241,0,0,0-.786-1.707,2.278,2.278,0,0,0-3.2.249l-5.374,6.254-13.543-3.74a1.459,1.459,0,0,0-1.691.815l-6.234,13.16-11.245-15.5a1.4,1.4,0,0,0-1.919-.191l-8.344,6.849L8.8,141.454a1.662,1.662,0,0,0-.937-1.035,1.711,1.711,0,0,0-2.261.852h0A69.535,69.535,0,0,0,.851,157.516c0,.689-.212,1.381-.285,2.09s-.155,1.4-.232,2.09-.114,1.422-.228,2.037a12.578,12.578,0,0,0,0,2.111,59.6,59.6,0,0,0,.46,8.479,41.087,41.087,0,0,0,1.3,6.063h0v.077H65.956a40.537,40.537,0,0,0,1.283-5.048,57.95,57.95,0,0,0,.815-8.516v-7.868a23.977,23.977,0,0,0-.086-2.648Z" transform="translate(-0.061 -140.268)"/>
@@ -178,7 +179,7 @@
               </a>
           </li>
           <li> 
-            <a aria-current={segment === 'about-hatch' ? 'page' : undefined} href="/about-hatch" >About Hatch
+            <a aria-current={segment === 'about-hatch' ? 'page' : undefined} rel="prefetch" href="about-hatch" >About Hatch
             {#if segment === 'about-hatch'}
                   <svg class="fill-current nav-item nav-item-4" xmlns="http://www.w3.org/2000/svg" width="68" height="40.195" viewBox="0 0 68 40.195">
                     <path id="Path_1233" data-name="Path 1233" d="M67.969,156.383a2.241,2.241,0,0,0-.786-1.707,2.278,2.278,0,0,0-3.2.249l-5.374,6.254-13.543-3.74a1.459,1.459,0,0,0-1.691.815l-6.234,13.16-11.245-15.5a1.4,1.4,0,0,0-1.919-.191l-8.344,6.849L8.8,141.454a1.662,1.662,0,0,0-.937-1.035,1.711,1.711,0,0,0-2.261.852h0A69.535,69.535,0,0,0,.851,157.516c0,.689-.212,1.381-.285,2.09s-.155,1.4-.232,2.09-.114,1.422-.228,2.037a12.578,12.578,0,0,0,0,2.111,59.6,59.6,0,0,0,.46,8.479,41.087,41.087,0,0,0,1.3,6.063h0v.077H65.956a40.537,40.537,0,0,0,1.283-5.048,57.95,57.95,0,0,0,.815-8.516v-7.868a23.977,23.977,0,0,0-.086-2.648Z" transform="translate(-0.061 -140.268)"/>
@@ -191,7 +192,7 @@
               </a>
           </li>
           <li>
-            <a aria-current={segment === 'the-blog' ? 'page' : undefined} href="/the-blog" >The Blog
+            <a aria-current={segment === 'the-blog' ? 'page' : undefined} rel="prefetch" href="the-blog" >The Blog
              {#if segment === 'the-blog'}
                   <svg class="fill-current nav-item nav-item-5" xmlns="http://www.w3.org/2000/svg" width="68" height="40.195" viewBox="0 0 68 40.195">
                     <path id="Path_1233" data-name="Path 1233" d="M67.969,156.383a2.241,2.241,0,0,0-.786-1.707,2.278,2.278,0,0,0-3.2.249l-5.374,6.254-13.543-3.74a1.459,1.459,0,0,0-1.691.815l-6.234,13.16-11.245-15.5a1.4,1.4,0,0,0-1.919-.191l-8.344,6.849L8.8,141.454a1.662,1.662,0,0,0-.937-1.035,1.711,1.711,0,0,0-2.261.852h0A69.535,69.535,0,0,0,.851,157.516c0,.689-.212,1.381-.285,2.09s-.155,1.4-.232,2.09-.114,1.422-.228,2.037a12.578,12.578,0,0,0,0,2.111,59.6,59.6,0,0,0,.46,8.479,41.087,41.087,0,0,0,1.3,6.063h0v.077H65.956a40.537,40.537,0,0,0,1.283-5.048,57.95,57.95,0,0,0,.815-8.516v-7.868a23.977,23.977,0,0,0-.086-2.648Z" transform="translate(-0.061 -140.268)"/>
@@ -204,7 +205,7 @@
               </a>
           </li>
           <li>
-            <a aria-current={segment === 'begin-now' ? 'page' : undefined} href="https://www.youngliving.com/vo/?fbclid=IwAR04XTDfCKsSlbBwdWnUz881IpMz220ypID2DHWJLjnkMCmzGFoopN4v0wo#/signup/new-start?sponsorid=14065507&enrollerid=14065507&isocountrycode=PH&culture=en-PH&type=member" >Begin Now
+            <a aria-current={segment === 'begin-now' ? 'page' : undefined} target="_blank" href="https://www.youngliving.com/vo/?fbclid=IwAR04XTDfCKsSlbBwdWnUz881IpMz220ypID2DHWJLjnkMCmzGFoopN4v0wo#/signup/new-start?sponsorid=14065507&enrollerid=14065507&isocountrycode=PH&culture=en-PH&type=member" >Begin Now
               
               {#if segment === 'begin-now'}
                   <svg class="fill-current nav-item nav-item-6" xmlns="http://www.w3.org/2000/svg" width="68" height="40.195" viewBox="0 0 68 40.195">

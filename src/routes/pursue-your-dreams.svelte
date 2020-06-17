@@ -2,14 +2,15 @@
   import client from "../lib/apollo";
   import { PAGE } from "../queries/page";
 
-  let slug = "home";
+  let slug = "pursue-your-dreams";
 
   export async function preload() { 
     return {
       cache: await client.query({
         query: PAGE,
         variables: { slug }
-      })
+      }),
+      slug
     };
   }
 </script>
@@ -28,14 +29,14 @@
   const pages = query(client, {
     query: PAGE,
     variables: { slug }
-  });
+  }); 
 </script>
 
 <style> 
 </style>
 
 <svelte:head>
-  <title>Hatch Essentials</title>
+  <title>Pursue Your Dreams</title>
 </svelte:head>
 
 <TransitionWrapper>

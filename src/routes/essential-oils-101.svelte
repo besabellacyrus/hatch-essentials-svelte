@@ -2,7 +2,7 @@
   import client from "../lib/apollo";
   import { PAGE } from "../queries/page";
 
-  let slug = "home";
+  let slug = "essential-oils-101";
 
   export async function preload() { 
     return {
@@ -35,7 +35,7 @@
 </style>
 
 <svelte:head>
-  <title>Hatch Essentials</title>
+  <title>Essential Oils 101</title>
 </svelte:head>
 
 <TransitionWrapper>

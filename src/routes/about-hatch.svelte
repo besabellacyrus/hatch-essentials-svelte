@@ -2,7 +2,7 @@
   import client from "../lib/apollo";
   import { PAGE } from "../queries/page";
 
-  let slug = "home";
+  let slug = "about-hatch";
 
   export async function preload() { 
     return {

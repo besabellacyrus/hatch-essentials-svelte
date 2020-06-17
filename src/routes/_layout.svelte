@@ -1,4 +1,4 @@
-<script>
+<script> 
   import Nav from "../components/Nav.svelte";
   import Footer from "../components/Footer.svelte";
 
@@ -11,8 +11,8 @@
 
 <Nav {segment} />
 
-<main>
-  <slot></slot>
+<main> 
+  <slot></slot> 
 </main>
 
 <Footer />
