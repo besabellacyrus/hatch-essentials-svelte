@@ -18,7 +18,8 @@
   import { restore, query } from "svelte-apollo";
   import DynamicBlock from "../components/page_elements/DynamicBlock.svelte"; 
   import TransitionWrapper from '../components/TransitionWrapper.svelte';
-
+  import BecomeMember from '../components/page_elements/BecomeMember.svelte'
+  
   export let cache;
   restore(client, PAGE, cache.data);
   // TODO Uncommenting this part triggers a 500 error.
@@ -31,7 +32,8 @@
   });
 </script>
 
-<style> 
+<style lang="scss"> 
+
 </style>
 
 <svelte:head>
@@ -53,3 +55,4 @@
     {/if}
 {/await}
 </TransitionWrapper>
+
