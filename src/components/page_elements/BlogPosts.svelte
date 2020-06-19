@@ -1,6 +1,9 @@
 <script>
 	export let posts
 	const thePosts = posts.data.posts.nodes; 
+	function capitalize(str) {
+		return str.charAt(0).toUpperCase() + str.slice(1)
+	}
 </script>
 
 <style>
@@ -18,7 +21,9 @@
 		     		<a href={`the-blog/`+post.slug}>
 		     			<img src="{post.featuredImage.sourceUrl}" alt="">
 			     		<h1 class="text-center">{post.title}</h1>
-			     		<h4 class="text-center mx-auto">Category</h4>
+			     		{#if post.categories.nodes.length > 0 }
+			     			<h4 class="text-center mx-auto">{ capitalize(post.categories.nodes[0].slug) }</h4>
+			     		{/if}
 		     		</a>
 			  	</div>
 		    {/each}
