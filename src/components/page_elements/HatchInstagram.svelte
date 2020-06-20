@@ -1,17 +1,17 @@
 <script> 
 	import { onMount } from 'svelte'
-
-	
+  // IGQVJVU0FzeFlmQ3RCS3VrbnJiZA3lpQ1p4M0VjcXRvYVBWdHBlQlpHRmROZAkx1ZAmRLVlM5LW9qMVdJdGk3WDNZAZAlpDeVEwbDRrRHJ2dHNiS2dxQ3pTenRJbGhzaGUxel9vcUlPSGRR
 	onMount(() => {
-		// var feed = new Instafeed({
-	 //    get: 'user',  
-	 //    accessToken: 'IGQVJYb2NocXZAZ634hgdf83hjdj2AR2JneEtCWElhVzE1Q001dm9WaVZAXZA1ByNzYzeVRyaHMydm5IbG9oclI0X0U4TVI0bjEtcGdxamFHLXloV2pJTG1MczNDb1dGQnMzLTZAja1p2UVhEVVZAwREc4cHNn',
-	 //    target: 'instagramfeed',
-	 //    userId: '17841405013225096'
-	 //  });
-  // 	feed.run();
+		var feed = new Instafeed({
+	    get: 'user',
+      accessToken: 'IGQVJWenlRLWhqbDA4ZA1RRWW9PRGJsdXQyNVktWEpSc2JQZAF9saWVaWVJsUUNfT3hGRlh5YjlOLVV6dEdOZATBoaExMaXVBUmJRSE5SRHQxTEo0aTRtUGFOUnlNSGtBOXpsWnYzbGpR',
+	    target: 'instagramfeed',
+	    userId: '33443551043',
+      limit: 3
+	  });
+  	feed.run();
 	}) 
- 
+
 </script>
 <style></style>
 
@@ -30,16 +30,5 @@
       <p>Follow us <b>@hatchessentials</b></p>
     </div>
   </div>
-  <div class="instagram-items">
-  	<div id="instagramfeed"></div> 
-    <div>
-    	<img src="http://hatchessentials.com/wp-api/wp-content/uploads/2020/06/Pursue-Dreams.jpg" alt="">
-    </div>
-    <div class="">
-    	<img src="http://hatchessentials.com/wp-api/wp-content/uploads/2020/06/Pursue-Dreams.jpg" alt="">
-    </div>
-    <div class="">
-    	<img src="http://hatchessentials.com/wp-api/wp-content/uploads/2020/06/Pursue-Dreams.jpg" alt="">
-    </div>
-  </div>
-</section>
+  <div id="instagramfeed" class="instagram-items"></div> 
+</section> 

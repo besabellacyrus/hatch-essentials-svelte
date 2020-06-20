@@ -166,6 +166,7 @@ footer {
   	display: grid;
   	grid-template-columns: 1fr 1fr 1fr;
   	padding: 1rem;
+    grid-gap: 1rem;
   	div {
   		padding: 0.5rem;
   	}
@@ -264,10 +265,14 @@ footer {
       align-items: center;
       .subscribe-form {
         & form {
+        	color: #fff;
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
           grid-gap: 0.6rem;
           align-items: center;
+          input {
+          	padding-left: 0.5rem;
+          }
         }
       }
     } 

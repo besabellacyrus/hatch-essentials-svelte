@@ -1,7 +1,11 @@
 <script>
-  import HatchInstagram from '../components/page_elements/HatchInstagram.svelte'
+  import HatchInstagram from '../components/page_elements/HatchInstagram.svelte';
+  import Subscribe from '../components/page_elements/Subscribe.svelte';
+
 </script>
 
+<div class="spacer"></div>
+<Subscribe />
 <div class="spacer"></div>
 <footer>
 	<div class="container mx-auto">
