@@ -32,12 +32,13 @@
   });
 </script>
 
-<style lang="scss"> 
-
+<style>  
 </style>
 
-<svelte:head>
-  <title>About Hatch</title>
+<svelte:head> 
+{#if cache}
+  { @html cache.data['hatch_PageBy']['head_tags']['headTags'] }
+{/if}
 </svelte:head>
 
 <TransitionWrapper>

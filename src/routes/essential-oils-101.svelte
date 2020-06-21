@@ -34,8 +34,10 @@
 <style> 
 </style>
 
-<svelte:head>
-  <title>Essential Oils 101</title>
+<svelte:head> 
+  {#if cache}
+    { @html cache.data['hatch_PageBy']['head_tags']['headTags'] }
+  {/if}
 </svelte:head>
 
 <TransitionWrapper>

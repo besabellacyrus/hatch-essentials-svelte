@@ -11,6 +11,10 @@ export const PAGE = gql`
           }
         }
       }
+      title
+      head_tags {
+        headTags
+      }
     }
   }
 `;

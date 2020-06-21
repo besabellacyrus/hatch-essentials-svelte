@@ -29,19 +29,22 @@
     query: PAGE,
     variables: { slug }
   });
+  console.log({ pages: $pages })
 </script>
 
 <style> 
 </style>
 
-<svelte:head>
-  <title>Hatch Essentials</title>
+<svelte:head> 
+  {#if cache}
+    { @html cache.data['hatch_PageBy']['head_tags']['headTags'] }
+  {/if}
 </svelte:head>
 
 <TransitionWrapper>
-{#await $pages}
-  <p>Loading...</p>
-{:then data}
+  {#await $pages}
+    <p>Loading...</p>
+  {:then data}
     {#if data.data}
       {#each data.data['hatch_PageBy']['page']['fc'] as page, i}
         <DynamicBlock content={page.content} bgColor={page.backgroundColor} />

@@ -146,6 +146,10 @@ const PAGE = ApolloClient.gql`
           }
         }
       }
+      title
+      head_tags {
+        headTags
+      }
     }
   }
 `;
@@ -204,16 +208,19 @@ const Routes = create_ssr_component(($$result, $$props, $$bindings, $$slots) => 
 	const pages = svelteApollo.query(client, { query: PAGE, variables: { slug } });
 
 	$pages = get_store_value(pages);
+	console.log({ pages: $pages });
 	if ($$props.cache === void 0 && $$bindings.cache && cache !== void 0) $$bindings.cache(cache);
 	$pages = get_store_value(pages);
 
-	return `${($$result.head += `${($$result.title = `<title>Hatch Essentials</title>`, "")}`, "")}
+	return `${($$result.head += `${cache
+	? `${cache.data["hatch_PageBy"]["head_tags"]["headTags"]}`
+	: ``}`, "")}
 
 ${validate_component(TransitionWrapper, "TransitionWrapper").$$render($$result, {}, {}, {
 		default: () => `${(function (__value) {
 			if (is_promise(__value)) return `
-  <p>Loading...</p>
-`;
+    <p>Loading...</p>
+  `;
 
 			return (function (data) {
 				return `
@@ -257,7 +264,9 @@ const Essential_oils_101 = create_ssr_component(($$result, $$props, $$bindings, 
 	if ($$props.cache === void 0 && $$bindings.cache && cache !== void 0) $$bindings.cache(cache);
 	$pages = get_store_value(pages);
 
-	return `${($$result.head += `${($$result.title = `<title>Essential Oils 101</title>`, "")}`, "")}
+	return `${($$result.head += `${cache
+	? `${cache.data["hatch_PageBy"]["head_tags"]["headTags"]}`
+	: ``}`, "")}
 
 ${validate_component(TransitionWrapper, "TransitionWrapper").$$render($$result, {}, {}, {
 		default: () => `${(function (__value) {
@@ -308,7 +317,9 @@ const Pursue_your_dreams = create_ssr_component(($$result, $$props, $$bindings, 
 	if ($$props.cache === void 0 && $$bindings.cache && cache !== void 0) $$bindings.cache(cache);
 	$pages = get_store_value(pages);
 
-	return `${($$result.head += `${($$result.title = `<title>Pursue Your Dreams</title>`, "")}`, "")}
+	return `${($$result.head += `${cache
+	? `${cache.data["hatch_PageBy"]["head_tags"]["headTags"]}`
+	: ``}`, "")}
 
 ${validate_component(TransitionWrapper, "TransitionWrapper").$$render($$result, {}, {}, {
 		default: () => `${(function (__value) {
@@ -358,7 +369,9 @@ const About_hatch = create_ssr_component(($$result, $$props, $$bindings, $$slots
 	if ($$props.cache === void 0 && $$bindings.cache && cache !== void 0) $$bindings.cache(cache);
 	$pages = get_store_value(pages);
 
-	return `${($$result.head += `${($$result.title = `<title>About Hatch</title>`, "")}`, "")}
+	return `${($$result.head += `${cache
+	? `${cache.data["hatch_PageBy"]["head_tags"]["headTags"]}`
+	: ``}`, "")}
 
 ${validate_component(TransitionWrapper, "TransitionWrapper").$$render($$result, {}, {}, {
 		default: () => `${(function (__value) {
@@ -507,7 +520,9 @@ const The_blog = create_ssr_component(($$result, $$props, $$bindings, $$slots) =
 	if ($$props.postsCache === void 0 && $$bindings.postsCache && postsCache !== void 0) $$bindings.postsCache(postsCache);
 	$posts = get_store_value(posts);
 
-	return `${($$result.head += `${($$result.title = `<title>The Blog</title>`, "")}`, "")}
+	return `${($$result.head += `${cache
+	? `${cache.data["hatch_PageBy"]["head_tags"]["headTags"]}`
+	: ``}`, "")}
  
 ${validate_component(TransitionWrapper, "TransitionWrapper").$$render($$result, {}, {}, {
 		default: () => `${(function (__value) {

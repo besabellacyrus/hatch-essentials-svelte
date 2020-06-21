@@ -41,7 +41,9 @@
 </style>
 
 <svelte:head>
-  <title>The Blog</title>
+  {#if cache}
+    { @html cache.data['hatch_PageBy']['head_tags']['headTags'] }
+  {/if}
 </svelte:head>
  
 <TransitionWrapper>

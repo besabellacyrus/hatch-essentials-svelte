@@ -35,8 +35,10 @@
 <style> 
 </style>
 
-<svelte:head>
-  <title>Pursue Your Dreams</title>
+<svelte:head> 
+  {#if cache}
+    { @html cache.data['hatch_PageBy']['head_tags']['headTags'] }
+  {/if}
 </svelte:head>
 
 <TransitionWrapper>
