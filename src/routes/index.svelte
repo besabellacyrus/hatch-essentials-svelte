@@ -28,8 +28,7 @@
   const pages = query(client, {
     query: PAGE,
     variables: { slug }
-  });
-  console.log({ pages: $pages })
+  }); 
 </script>
 
 <style> 

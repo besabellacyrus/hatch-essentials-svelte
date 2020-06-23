@@ -24,19 +24,21 @@
 
 <div class="subscribe-wrapper">
   <div class="container mx-auto">
-    <div>
-      <img src="/img/image-2.jpg" alt="">
-    </div>
-    <div class="subscribe-content">
+    <div class="subscribe">
       <div>
-        <h2>Subscribe</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque nemo obcaecati, ab rerum optio esse suscipit, numquam ex vero aliquid dolorum illum atque consequuntur! Qui dolores, facilis error quidem possimus magnam esse expedita eos.</p>
-        <div class="subscribe-form">
-          <form on:submit|preventDefault="{handleSubmit}" >
-            <input type="text" id="name" bind:value={$subscriber.name} placeholder="Your Name Here" required>
-            <input type="email" id="email" bind:value={$subscriber.email} placeholder="Your Email Here" required>
-            <button><em>Subscribe</em></button>
-          </form>
+        <img src="/img/image-2.jpg" alt="">
+      </div>
+      <div class="subscribe-content">
+        <div>
+          <h2>Subscribe</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque nemo obcaecati, ab rerum optio esse suscipit, numquam ex vero aliquid dolorum illum atque consequuntur! Qui dolores, facilis error quidem possimus magnam esse expedita eos.</p>
+          <div class="subscribe-form">
+            <form on:submit|preventDefault="{handleSubmit}" >
+              <input type="text" id="name" bind:value={$subscriber.name} placeholder="Your Name Here" required>
+              <input type="email" id="email" bind:value={$subscriber.email} placeholder="Your Email Here" required>
+              <button><em>Subscribe</em></button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
