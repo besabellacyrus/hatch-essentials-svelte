@@ -70,10 +70,14 @@ p {
   font-family: 'MontserratLight', sans-serif;
   font-weight: light;
   font-weight: 400;
-  font-size: 1.8rem;
+  // font-size: 1.8rem;
   font-style: normal;
   padding: 1rem;
+  line-height: 1.8em;
   color: $p-color;
+  @media screen and (max-width: 425px) {
+    text-align: center;
+  }
 }
  
 h1, h2 {
@@ -135,6 +139,9 @@ main {
     position: relative;
     margin-bottom: 1.5rem;
     padding-bottom: 3rem;
+    @media screen and (max-width: 425px) {
+      text-align: center;
+    }
     &:after {
       content: "";
       border-bottom: 3px solid #3e99c4;
@@ -143,6 +150,10 @@ main {
       height: 1rem;
       width: 2rem;
       left: 1rem;
+      @media screen and (max-width: 425px) {
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
     }
   }
 }
