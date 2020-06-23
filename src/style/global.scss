@@ -263,6 +263,10 @@ footer {
     }
     h2 {
       padding: 0;
+      @media screen and (max-width: 425px) {
+      	margin: 0 auto;
+    		text-align: center;
+      }
     }
     img {
       height: 100%;
@@ -326,18 +330,17 @@ footer {
 		}
 		input {
       transition: all 300ms;
-      width: 10rem;
-      height: 2rem;
-      
+      height: 3.5rem;
+      width: 100%;
     }
     textarea, input {
-			// font-size: 1.8rem; 
       border-radius: 6px;
       background-color: transparent;
       border: 1px solid #fff; 
-      height: 3rem;
-      width: 100%;
-      height: 100%;
+    }
+    textarea {
+    	width: 100%;
+    	height: 100%;
     }
   }
 

@@ -7,10 +7,25 @@
 	.become-a-member {
 		display: grid;
     grid-template-columns: 1fr 1fr;
+    @media screen and (max-width: 768px) {
+    	display: flex;
+  		flex-direction: column-reverse;
+    	grid-template-columns: initial;
+    }
     grid-gap: 1.5rem;
 		.member-forms {
 			display: flex;
     	align-items: center;
+    	@media screen and (max-width: 768px) {
+    		display: initial;
+	    	grid-template-columns: initial;
+    		height: 60rem;
+	    }
+	    form {
+	    	@media screen and (max-width: 768px) {
+	    		padding: 2rem;
+	    	}
+	    }
 		}
     h3 {
     	padding: 0 1rem;
@@ -25,11 +40,13 @@
     	width: 100%;
     	input, textarea {
     		width: 100% !important;
-    		/*color: #5d5d5d !important;*/
     	}
     	.upper {
     		display: grid;
     		grid-gap: 1rem;
+    		& input {
+    			height: 4rem;
+    		}
     	}
     	.lower {
     		display: grid;
@@ -49,14 +66,19 @@
     	display: flex;
     	justify-content: center;
     	align-items: center;
-    	height: 26rem;
+    	/*height: 26rem;*/
+    	@media screen and (max-width: 768px) {
+    		text-align: center;
+    		h3 {
+    			margin: 0 auto;
+    		}
+    	}
 			h2 {
 				white-space: initial;
 				line-height: 1.3;
 				padding: 0 1rem 1rem;
 			}
     	p {
-    		font-size: 0.7rem;
     		padding: 0 1rem 1rem;
     	}
     }
