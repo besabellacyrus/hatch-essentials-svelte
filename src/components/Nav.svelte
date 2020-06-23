@@ -18,7 +18,7 @@
      margin-top: 0.4rem;
      svg {
         margin: 0 auto;
-        width: 3rem;
+        width: 5rem;
         height: 1rem;
         position: relative;
         top: 1.2rem;
@@ -42,7 +42,10 @@
   nav {
     background-color: #fbf6f4;
     ul {
-      font-size: 0.6rem;
+      font-size: 1.3rem;
+      @media screen and (max-width: 768px) {
+        font-size: 0.9rem;
+      }
       font-weight: bold;
     }
   }
@@ -56,7 +59,8 @@
     }
   }
   .nav-pc {
-    height: 5rem;
+    height: 7rem;
+
     /*margin-top: 1rem;*/
     @media screen and (max-width: 599px) {
       display: none;
@@ -65,7 +69,7 @@
   .nav-item {
     opacity: 0.6; 
     transition: 300ms all; 
-    height: 2rem;
+    height: 3rem;
     position: relative; 
     top: -0.18rem;
     &:active {
