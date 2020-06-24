@@ -1,17 +1,25 @@
 <script>
 	import { subscriber } from "../../store/subscribe.js"
   let loading = false;
+  let sent = false;
 
   async function handleSubmit (event) {
-    let formData = new FormData();
-    formData.append("your-name", event.target.name.value);
-    formData.append("your-email", event.target.email.value);
-    
-    const res = await fetch('http://hatchessentials.com/wp-api/wp-json/contact-form-7/v1/contact-forms/86/feedback', {
-      method: 'POST', 
-      body: formData
-    })
-    console.log({ res })
+    if (!sent) {
+      let formData = new FormData();
+      formData.append("your-name", event.target.name.value);
+      formData.append("your-email", event.target.email.value);
+      
+      const res = await fetch('http://hatchessentials.com/wp-api/wp-json/contact-form-7/v1/contact-forms/86/feedback', {
+        method: 'POST', 
+        body: formData
+      }).then(e => {
+        if (e.statusText === 'OK') {
+          sent = true;
+          $subscriber.name = '';
+          $subscriber.email = '';
+        }
+      })
+    }
   }
 </script>
 
@@ -35,6 +43,9 @@
               <input type="email" id="email" bind:value={$subscriber.email} placeholder="Your Email Here" required>
               <button><em>Subscribe</em></button>
             </form>
+              {#if sent}
+              <p>Thank You for your subscription</p>
+              {/if}
           </div>
         </div>
       </div>
