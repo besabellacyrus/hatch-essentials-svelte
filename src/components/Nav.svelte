@@ -43,6 +43,9 @@
     background-color: #fbf6f4;
     ul {
       font-size: 1.3rem;
+      @media screen and (max-width: 1024px) {
+        font-size: 1rem;
+      }
       @media screen and (max-width: 768px) {
         font-size: 0.9rem;
       }
@@ -72,6 +75,9 @@
     height: 3rem;
     position: relative; 
     top: -0.18rem;
+    @media screen and (max-width: 1024px) {
+      top: 0rem;
+    }
     &:active {
       opacity: 1;
     }
