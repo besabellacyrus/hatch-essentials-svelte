@@ -8,10 +8,7 @@
     formData.append("your-email", event.target.email.value);
     
     const res = await fetch('http://hatchessentials.com/wp-api/wp-json/contact-form-7/v1/contact-forms/86/feedback', {
-      method: 'POST',
-      headers: {
-        "Content-Type": "multipart/form-data"
-      },
+      method: 'POST', 
       body: formData
     })
     console.log({ res })
