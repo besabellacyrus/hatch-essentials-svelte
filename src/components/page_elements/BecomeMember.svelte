@@ -6,7 +6,7 @@
     if (!sent) {
       let formData = new FormData();
       formData.append("your-name", event.target.name.value);
-      formData.append("your-location", event.target.location.value);
+      formData.append("your-email", event.target.location.value);
       formData.append("your-message", event.target.message.value);
       
       const res = await fetch('http://hatchessentials.com/wp-api/wp-json/contact-form-7/v1/contact-forms/89/feedback', {
@@ -16,7 +16,7 @@
         if (e.statusText === 'OK') {
           sent = true;
           $subscriber.name = '';
-          $subscriber.location = '';
+          $subscriber.email = '';
           $subscriber.message = '';
         }
       })
@@ -137,7 +137,7 @@
 				<form on:submit|preventDefault="{handleSubmit}">
 					<div class="upper">
 						<input type="text" id="name" bind:value={$subscriber.name}  placeholder="Your Name Here">
-						<input type="text" id="location" bind:value={$subscriber.location}  placeholder="Location">
+						<input type="email" id="email" bind:value={$subscriber.email}  placeholder="Location">
 					</div>
 					<div class="lower">
 						<textarea name="" id="message" cols="30" rows="10" bind:value={$subscriber.message}  placeholder="Message"></textarea>

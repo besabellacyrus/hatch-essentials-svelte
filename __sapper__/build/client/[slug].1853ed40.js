@@ -1,4 +1,4 @@
-import{S as t,i as s,s as a,n as c,a as e,u as l,q as n,d as o,b as r,w as u,x as i,C as d,h,g as p,o as f,e as m,v as g,y as v,H as E,T as y}from"./client.d3fc55a8.js";import{s as x,c as b,r as k}from"./svelte-apollo.es.cdc80f8f.js";const I=x`
+import{S as t,i as s,s as a,n as c,a as e,u as l,q as n,d as o,b as r,w as u,x as i,C as d,h,g as p,o as f,e as m,v as g,y as v,H as E,T as y}from"./client.d823435a.js";import{s as x,c as b,r as k}from"./svelte-apollo.es.fcc6ceca.js";const I=x`
 	query MyQuery($slug: ID!) {
   	post(id: $slug, idType: SLUG) {
 	    categories {
