@@ -36,12 +36,16 @@
       <div class="subscribe-content">
         <div>
           <h2>Subscribe</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque nemo obcaecati, ab rerum optio esse suscipit, numquam ex vero aliquid dolorum illum atque consequuntur! Qui dolores, facilis error quidem possimus magnam esse expedita eos.</p>
+          <p>
+            Are you ready to start learning about natural health? <br>
+            Grab my FREE blueprint to get started now. <br>
+            3 WAYS “BEING CRUNCHY” CAN CHANGE YOUR LIFE FOR THE BETTER
+          </p>
           <div class="subscribe-form">
             <form on:submit|preventDefault="{handleSubmit}" >
               <input type="text" id="name" bind:value={$subscriber.name} placeholder="Your Name Here" required>
               <input type="email" id="email" bind:value={$subscriber.email} placeholder="Your Email Here" required>
-              <button><em>Subscribe</em></button>
+              <button><em>Download Now</em></button>
             </form>
               {#if sent}
               <p>Thank You for your subscription</p>

@@ -25,9 +25,10 @@
       <img src="logo.svg" />
     </div>
     <div>
-      <p>For daily updates, inspirations and anything about hatch essentials,
-      please follow us on instagram.</p>
-      <p>Follow us <b>@hatchessentials</b></p>
+      <p> GET BEHIND THE SCENES. <br>
+        Share my “AHA”  moments on the ‘gram. 
+      </p>
+      <p>Follow me <b>@hatchessentials</b></p>
     </div>
   </div>
   <div id="instagramfeed" class="instagram-items"></div> 
