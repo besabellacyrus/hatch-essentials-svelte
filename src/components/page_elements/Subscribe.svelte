@@ -34,7 +34,7 @@
         <img src="/img/image-2.jpg" alt="">
       </div>
       <div class="subscribe-content">
-        <div>
+        <div class="content">
           <h2>Subscribe</h2>
           <p>
             Are you ready to start learning about natural health? <br>

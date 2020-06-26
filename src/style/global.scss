@@ -276,6 +276,11 @@ footer {
       display: grid;
       justify-content: center;
       align-items: center;
+      & .content {
+      	@media screen and (max-width: 1024px){
+      		padding: 4rem 1rem;
+      	}
+      }
       .subscribe-form {
         & form {
         	color: #fff;
