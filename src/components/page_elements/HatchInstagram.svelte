@@ -26,7 +26,7 @@
     </div>
     <div>
       <p> GET BEHIND THE SCENES. <br>
-        Share my “AHA”  moments on the ‘gram. 
+        My “AHA”  moments on the ‘gram. 
       </p>
       <p>Follow me <b>@hatchessentials</b></p>
     </div>

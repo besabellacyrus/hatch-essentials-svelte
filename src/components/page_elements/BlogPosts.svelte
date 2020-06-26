@@ -19,7 +19,9 @@
 			  {#each posts as post, i}
 			  	<div class="post">
 		     		<a href={`the-blog/`+post.slug}>
-		     			<img src="{post.featuredImage.sourceUrl}" alt="">
+		     			{#if post.featuredImage && post.featuredImage.sourceUrl}
+		     				<img src="{post.featuredImage.sourceUrl}" alt="">
+		     			{/if}
 			     		<h1 class="text-center">{post.title}</h1>
 			     		{#if post.categories.nodes.length > 0 }
 			     			<h4 class="text-center mx-auto">{ capitalize(post.categories.nodes[0].slug) }</h4>
