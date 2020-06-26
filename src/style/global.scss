@@ -358,6 +358,113 @@ footer {
   margin: 0 auto;
 }
 
+.become-a-member-wrapper {
+		margin: 2rem 0 2rem;
+	}
+	.become-a-member {
+		display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media screen and (max-width: 768px) {
+    	display: flex;
+  		flex-direction: column-reverse;
+    	grid-template-columns: initial;
+    }
+    grid-gap: 1.5rem;
+		.member-forms {
+			display: flex;
+    	align-items: center;
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            padding-left: 2rem;
+        }
+    	@media screen and (max-width: 768px) {
+    		display: initial;
+	    	grid-template-columns: initial;
+    		height: 60rem;
+	    }
+	    form {
+	    	@media screen and (max-width: 768px) {
+	    		padding: 2rem;
+	    	}
+	    }
+		}
+    h3 {
+    	padding: 0 1rem;
+    }
+    h2 {
+    	max-width: initial;
+    }
+    & form {
+    	display: grid;
+    	grid-template-rows: 1fr;
+    	grid-gap: 1rem;
+    	width: 100%;
+    	input, textarea {
+    		width: 100% !important;
+    	}
+    	.upper {
+    		display: grid;
+    		grid-gap: 1rem;
+    		& input {
+    			height: 4rem;
+    		}
+    	}
+    	.lower {
+    		display: grid;
+    		grid-gap: 1rem;
+    		justify-items: right;
+    		textarea {
+    			width: 100%;
+    		}
+    	}
+    	button {
+    		&:hover {
+    			color: #5d5d5d;
+    		}
+    	}
+    }
+    .become-a-member-content {
+    	display: flex;
+    	/*justify-content: center;*/
+    	/*align-items: center;*/
+    	/*height: 26rem;*/
+    	@media screen and (max-width: 768px) {
+    		text-align: center;
+    		h3 {
+    			margin: 0 auto;
+    		}
+    	}
+			h2 {
+				white-space: initial;
+				line-height: 1.3;
+				padding: 0 1rem 1rem;
+			}
+    	p {
+    		padding: 0 1rem 1rem;
+    	}
+    }
+    input, textarea {
+    	/*color: #959595 !important;*/
+    	border: 1px solid #959595 !important;
+    	padding-left: 1rem;
+    }
+    textarea {
+    	/*color: #959595 !important;*/
+    	padding-top: 0.5rem;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+		  color: #959595 !important;;
+		  opacity: 1; /* Firefox */
+		}
+
+		:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		  color: #959595 !important;;
+		}
+
+		::-ms-input-placeholder { /* Microsoft Edge */
+		  color: #959595 !important;;
+		}
+	}
+
 
 .loader {
 	position: fixed;

@@ -155,15 +155,14 @@
 				<div>
 					<h3>I WANT TO DO THIS NOW</h3>
 					<h2>BECOME A MEMBER <br/> OF HATCH ESSENTIALS</h2>
-					 <ul>
-					 	<li>
-					 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus sequi hic quae dolores magnam iusto rerum rem maiores reprehenderit tempora. Debitis, natus, doloremque.</p>
-					 	</li>
-					 	<li>
-					 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus sequi hic quae dolores magnam iusto rerum rem maiores reprehenderit tempora. Debitis, natus, doloremque.</p>
-					 	</li>
-					 	 
-					 </ul>
+					  <p>
+         Our community is a safe and loving place for you to get the best “oil-ducation”. Once you become a member, you’ll get access to my exclusive, member’s only group. This is where you can get weekly classes, diffuser recipes, DIY projects, and also an opportunity to join our mentorship groups, connect with like-minded individuals and so much more!
+          <br>
+          As a free gift when you get started with me, you also get a reference app and a DIY kit* that can help you get those oily DIY projects started easily. Yey for FREE stuff!
+          <br>
+          <small>*DIY kit is only for Philippine based members, if you are an international, email me and I will let you know what is the new free offer.</small>
+     
+            </p>
 				</div>
 			</div>
 		</div>
