@@ -1,4 +1,4 @@
-import{S as s,i as t,s as a,u as o,w as e,x as n,d as c,C as l,D as r,h as i,o as u,E as d,e as h,p,j as g,r as f,t as m,B as $,F as b,G as y,I as C,J as _,K as v,L as E}from"./client.4e377146.js";import{s as H}from"./svelte-apollo.es.8dfdc4b3.js";const P=H`
+import{S as s,i as t,s as a,u as o,w as e,x as n,d as c,C as l,D as r,h as i,o as u,E as d,e as h,p,j as g,r as f,t as m,B as $,F as b,G as y,I as C,J as _,K as v,L as E}from"./client.f1bdbe61.js";import{s as H}from"./svelte-apollo.es.e909f808.js";const P=H`
   query Hatch_Page($slug: String!) {
     hatch_PageBy(slug: $slug) {
       page {

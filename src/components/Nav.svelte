@@ -115,7 +115,7 @@
   }
   .hatch-nav {
     margin-top: 2.34rem;
-    @media screen and (min-width: 604px) and (max-width: 620px) {
+    @media screen and (min-width: 600px) and (max-width: 678px) {
       font-size: 0.6rem;
       margin-top: 2.8rem;
     }
