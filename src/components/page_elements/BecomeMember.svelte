@@ -159,12 +159,7 @@
 					 	<li>
 					 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus sequi hic quae dolores magnam iusto rerum rem maiores reprehenderit tempora. Debitis, natus, doloremque.</p>
 					 	</li>
-					 	<li>
-					 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus sequi hic quae dolores magnam iusto rerum rem maiores reprehenderit tempora. Debitis, natus, doloremque.</p>
-					 	</li>
-					 	<li>
-					 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus sequi hic quae dolores magnam iusto rerum rem maiores reprehenderit tempora. Debitis, natus, doloremque.</p>
-					 	</li>
+					 	 
 					 </ul>
 				</div>
 			</div>
