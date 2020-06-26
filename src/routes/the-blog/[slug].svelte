@@ -39,10 +39,7 @@
 </svelte:head>
 
 <style lang="scss">
-  .content-wrapper {
-    max-width: 36rem;
-    margin: 0 auto;
-  }
+  
 </style>
 
 <section class="container mx-auto">
