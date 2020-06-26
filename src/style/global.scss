@@ -247,9 +247,13 @@ footer {
     & .subscribe {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-gap: 4rem;
-    	max-width: 112rem;
+      // grid-gap: 4rem;
+    	// max-width: 112rem;
       margin: 0 auto;
+      .subscribe-image {
+      	height: 36rem;
+    		margin: 0 auto;
+      }
       @media screen and (max-width: 425px) {
       	grid-template-rows: 0.3fr 1fr;
       	grid-template-columns: initial;
@@ -270,7 +274,7 @@ footer {
     }
     img {
       height: 100%;
-      width: 100%;
+      // width: 100%;
     }
     .subscribe-content {
       display: grid;

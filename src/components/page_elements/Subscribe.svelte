@@ -30,7 +30,7 @@
 <div class="subscribe-wrapper">
   <div class="container mx-auto">
     <div class="subscribe">
-      <div>
+      <div class="subscribe-image">
         <img src="/img/image-2.jpg" alt="">
       </div>
       <div class="subscribe-content">

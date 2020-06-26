@@ -40,6 +40,9 @@
 		.member-forms {
 			display: flex;
     	align-items: center;
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            padding-left: 2rem;
+        }
     	@media screen and (max-width: 768px) {
     		display: initial;
 	    	grid-template-columns: initial;
@@ -88,8 +91,8 @@
     }
     .become-a-member-content {
     	display: flex;
-    	justify-content: center;
-    	align-items: center;
+    	/*justify-content: center;*/
+    	/*align-items: center;*/
     	/*height: 26rem;*/
     	@media screen and (max-width: 768px) {
     		text-align: center;
