@@ -427,8 +427,8 @@ const About_hatch = create_ssr_component(($$result, $$props, $$bindings, $$slots
 ${validate_component(TransitionWrapper, "TransitionWrapper").$$render($$result, {}, {}, {
 		default: () => `${(function (__value) {
 			if (is_promise(__value)) return `
-  <div class="${"loader"}"><p>Loading...</p></div>
-`;
+    <div class="${"loader"}"><p>Loading...</p></div>
+  `;
 
 			return (function (data) {
 				return `
@@ -443,7 +443,7 @@ ${validate_component(TransitionWrapper, "TransitionWrapper").$$render($$result, 
 						{}
 					)}`)}`
 				: `<p>ERROR!!</p>`}
-`;
+  `;
 			})(__value);
 		})($pages)}`
 	})}`;
@@ -576,16 +576,16 @@ const The_blog = create_ssr_component(($$result, $$props, $$bindings, $$slots) =
 	return `${($$result.head += `${cache
 	? `${cache.data["hatch_PageBy"]["head_tags"]["headTags"]}`
 	: ``}`, "")}
- 
+
 ${validate_component(TransitionWrapper, "TransitionWrapper").$$render($$result, {}, {}, {
 		default: () => `${(function (__value) {
 			if (is_promise(__value)) return `
-  <p>Loading...</p>
-`;
+    <p>Loading...</p>
+  `;
 
 			return (function (data) {
 				return `
-  ${data.data
+    ${data.data
 				? `${each(data.data["hatch_PageBy"]["page"]["fc"], (page, i) => `${validate_component(DynamicBlock, "DynamicBlock").$$render(
 						$$result,
 						{
@@ -596,17 +596,16 @@ ${validate_component(TransitionWrapper, "TransitionWrapper").$$render($$result, 
 						{}
 					)}`)}`
 				: `<p>ERROR!!</p>`}
-`;
-			})(__value);
-		})(cache)} 
-${(function (__value) {
-			if (is_promise(__value)) return `
   `;
+			})(__value);
+		})(cache)}
+  ${(function (__value) {
+			if (is_promise(__value)) return ``;
 
 			return (function (data) {
 				return `
     ${validate_component(BlogPosts, "BlogPosts").$$render($$result, { posts: data }, {}, {})}
-`;
+  `;
 			})(__value);
 		})($posts)}`
 	})}`;
@@ -758,8 +757,7 @@ const Subscribe = create_ssr_component(($$result, $$props, $$bindings, $$slots) 
             <br>
             Grab my FREE blueprint to get started now.
             <br>
-            3 WAYS “BEING CRUNCHY” CAN CHANGE YOUR LIFE FOR THE BETTER
-          </p>
+            </p>
           <div class="${"subscribe-form"}"><form><input type="${"text"}" id="${"name"}" placeholder="${"Your Name Here"}" required${add_attribute("value", $subscriber.name, 1)}>
               <input type="${"email"}" id="${"email"}" placeholder="${"Your Email Here"}" required${add_attribute("value", $subscriber.email, 1)}>
               <button><em>Download Now</em></button></form>

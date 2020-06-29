@@ -44,7 +44,7 @@
             <br />
             Grab my FREE blueprint to get started now.
             <br />
-            3 WAYS “BEING CRUNCHY” CAN CHANGE YOUR LIFE FOR THE BETTER
+            <!-- 3 WAYS “BEING CRUNCHY” CAN CHANGE YOUR LIFE FOR THE BETTER -->
           </p>
           <div class="subscribe-form">
             <form on:submit|preventDefault={handleSubmit}>

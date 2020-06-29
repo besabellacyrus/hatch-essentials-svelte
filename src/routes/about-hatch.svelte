@@ -4,7 +4,7 @@
 
   let slug = "about-hatch";
 
-  export async function preload() { 
+  export async function preload() {
     return {
       cache: await client.query({
         query: PAGE,
@@ -16,10 +16,10 @@
 
 <script>
   import { restore, query } from "svelte-apollo";
-  import DynamicBlock from "../components/page_elements/DynamicBlock.svelte"; 
-  import TransitionWrapper from '../components/TransitionWrapper.svelte';
-  import BecomeMember from '../components/page_elements/BecomeMember.svelte'
-  
+  import DynamicBlock from "../components/page_elements/DynamicBlock.svelte";
+  import TransitionWrapper from "../components/TransitionWrapper.svelte";
+  import BecomeMember from "../components/page_elements/BecomeMember.svelte";
+
   export let cache;
   restore(client, PAGE, cache.data);
   // TODO Uncommenting this part triggers a 500 error.
@@ -32,21 +32,22 @@
   });
 </script>
 
-<style>  
+<style>
+
 </style>
 
-<svelte:head> 
-{#if cache}
-  { @html cache.data['hatch_PageBy']['head_tags']['headTags'] }
-{/if}
+<svelte:head>
+  {#if cache}
+    {@html cache.data['hatch_PageBy']['head_tags']['headTags']}
+  {/if}
 </svelte:head>
 
 <TransitionWrapper>
-{#await $pages}
-  <div class="loader">
-    <p>Loading...</p>
-  </div>
-{:then data}
+  {#await $pages}
+    <div class="loader">
+      <p>Loading...</p>
+    </div>
+  {:then data}
     {#if data.data}
       {#each data.data['hatch_PageBy']['page']['fc'] as page, i}
         <DynamicBlock content={page.content} bgColor={page.backgroundColor} />
@@ -54,5 +55,5 @@
     {:else}
       <p>ERROR!!</p>
     {/if}
-{/await}
+  {/await}
 </TransitionWrapper>
