@@ -769,8 +769,7 @@ const Subscribe = create_ssr_component(($$result, $$props, $$bindings, $$slots) 
 const Footer = create_ssr_component(($$result, $$props, $$bindings, $$slots) => {
 	return `<div class="${"spacer"}"></div>
 ${validate_component(Subscribe, "Subscribe").$$render($$result, {}, {}, {})}
-<div class="${"spacer"}"></div>
-<footer><div class="${"container mx-auto"}"><div><hr></div>
+<footer class="${"mt-10"}"><div class="${"container mx-auto"}"><div><hr></div>
     ${validate_component(HatchInstagram, "HatchInstagram").$$render($$result, {}, {}, {})}</div>
   <div class="${"container mx-auto text-center"}"><span style="${"font-size: 0.7rem; white-space:pre-wrap;"}">Copyright © 2020 Hatch Essentials
     </span></div></footer>`;

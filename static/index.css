@@ -522,6 +522,10 @@ img {
   margin-top: 1.25rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .fixed {
   position: fixed;
 }

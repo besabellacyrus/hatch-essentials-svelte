@@ -1,15 +1,15 @@
 <script>
-  import HatchInstagram from '../components/page_elements/HatchInstagram.svelte';
-  import Subscribe from '../components/page_elements/Subscribe.svelte';
-
+  import HatchInstagram from "../components/page_elements/HatchInstagram.svelte";
+  import Subscribe from "../components/page_elements/Subscribe.svelte";
 </script>
 
-<div class="spacer"></div>
+<div class="spacer" />
 <Subscribe />
-<div class="spacer"></div>
-<footer>
-	<div class="container mx-auto">
-    <div><hr></div>
+<footer class="mt-10">
+  <div class="container mx-auto">
+    <div>
+      <hr />
+    </div>
     <HatchInstagram />
   </div>
   <div class="container mx-auto text-center">
