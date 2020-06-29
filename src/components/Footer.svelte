@@ -5,7 +5,7 @@
 
 <div class="spacer" />
 <Subscribe />
-<footer class="mt-12">
+<footer class="mt-24">
   <div class="container mx-auto">
     <div>
       <hr />
