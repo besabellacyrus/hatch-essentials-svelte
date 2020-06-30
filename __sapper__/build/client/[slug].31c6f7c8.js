@@ -1,1 +1,0 @@
-import{S as s,i as l,s as t}from"./client.aada2867.js";function a({params:s}){let l=s.slug;console.log({slug:l})}export default class extends s{constructor(s){super(),l(this,s,null,null,t,{})}}export{a as preload};

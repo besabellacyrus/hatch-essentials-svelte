@@ -12,19 +12,22 @@
     </span>
     <span>•</span>
     <span>
-      <a href="">Begin Now</a>
+      <a
+        href="https://www.youngliving.com/vo/?fbclid=IwAR04XTDfCKsSlbBwdWnUz881IpMz220ypID2DHWJLjnkMCmzGFoopN4v0wo#/signup/new-start?sponsorid=14065507&enrollerid=14065507&isocountrycode=PH&culture=en-PH&type=member">
+        Begin Now
+      </a>
     </span>
     <span>•</span>
     <span>
-      <a href="">Contact</a>
+      <a href="/contact">Contact</a>
     </span>
     <span>•</span>
     <span>
-      <a href="">Blog</a>
+      <a href="/the-blog">Blog</a>
     </span>
     <span>•</span>
     <span>
-      <a href="">Privacy</a>
+      <a href="/privacy-policy">Privacy</a>
     </span>
   </div>
 </div>
