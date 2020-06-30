@@ -723,7 +723,7 @@ const HatchInstagram = create_ssr_component(($$result, $$props, $$bindings, $$sl
 	onMount(() => {
 		var feed = new Instafeed({
 				get: "user",
-				accessToken: "IGQVJWenlRLWhqbDA4ZA1RRWW9PRGJsdXQyNVktWEpSc2JQZAF9saWVaWVJsUUNfT3hGRlh5YjlOLVV6dEdOZATBoaExMaXVBUmJRSE5SRHQxTEo0aTRtUGFOUnlNSGtBOXpsWnYzbGpR",
+				accessToken: "IGQVJYZAG5Cc3AtT0gyUjM2ZAnNNbG5oU0lsYzE0ZAVczQXF3bVJESXpsMERMMVRUSFNTU1RzRnBrV1R5VEFaR214Q08wR2J2eGdmSnd0aGJHcUxra3JUb2oxMDRsVzZACaG9fYV92X3NB",
 				target: "instagramfeed",
 				userId: "33443551043",
 				limit: 3
@@ -735,10 +735,12 @@ const HatchInstagram = create_ssr_component(($$result, $$props, $$bindings, $$sl
 	return `${($$result.head += `<script src="${"/js/instafeed.js"}"></script>`, "")}
 
 <section class="${"hatch-instagram"}"><div class="${"left-section"}"><div class="${"hatch-logo"}"><img src="${"logo.svg"}"></div>
-    <div><p>GET BEHIND THE SCENES. <br>
-        My “AHA”  moments on the ‘gram. 
+    <div><p>GET BEHIND THE SCENES.
+        <br>
+        My “AHA” moments on the ‘gram.
       </p>
-      <p>Follow me <b>@hatchessentials</b></p></div></div>
+      <p>Follow me
+        <b>@hatchessentials</b></p></div></div>
   <div id="${"instagramfeed"}" class="${"instagram-items"}"></div></section>`;
 });
 
