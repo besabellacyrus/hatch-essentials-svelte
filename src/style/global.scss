@@ -11,30 +11,66 @@ html, body {
  padding: 0;
 } 
 
+h5 {
+  padding: 1rem;
+  font-weight: 700;
+}
+
 .hatch-left-image-big img {
 		position: relative;
 		z-index: 9;
-		height: 100%;
-		width: 100%;
+		// height: 100%;
+    // width: 100%;
 	}
 	.hatch-right-image-big img {
 		position: relative;
 		z-index: 9;
-		height: 100%;
-		width: 100%;
-	}
+		// height: 100%;
+    // width: 100%;
+  }
+  
+.blue-bg-square-left {
+  box-shadow: -14px 22px 0px -2px #96bdf2;
+}
+
+.blue-bg-square-right {
+  box-shadow: 19px 22px 0px -2px #96bdf2;
+}
+
+
+.pink-bg-square-left {
+  box-shadow: -14px 22px 0px -2px #d9a7c0;
+}
+
+.pink-bg-square-right {
+  box-shadow: 19px 22px 0px -2px #d9a7c0;
+}
+
+.yellow-bg-square-left {
+  box-shadow: -14px 22px 0px -2px #efc881;
+}
+
+.yellow-bg-square-right {
+  box-shadow: 19px 22px 0px -2px #efc881;
+}
+
 .hatch-left-image-big {
 		position: relative;
-		padding: 3rem 0rem 3rem 3rem;
+    // padding: 3rem 0rem 3rem 3rem;
+    padding: 4rem;
 		&:after {
-			content: '';
-			position: absolute;
-			right: 20px;
-	    top: 35px;
-	    height: 92%;
-	    width: 95%;
-	    background-color: #96bdf2;
-	    z-index: 1; 
+			// content: '';
+			// position: absolute;
+			// right: 20px;
+			// top: 35px;
+			// height: 92%;
+      // width: 95%;
+      // right: 51px;
+      // top: 50px;
+      // height: 90%;
+      // width: 75%;
+			// background-color: #96bdf2;
+			// z-index: 1; 
 		}
 	}
 
@@ -58,17 +94,18 @@ html, body {
 
 .hatch-right-image-big {
 	position: relative;
-	padding: 3rem 3rem 3rem 0rem;
-	&:after {
-		content: '';
-		position: absolute;
-		left: 20px;
-    top: 35px;
-    height: 92%;
-    width: 95%;
-    background-color: #d9a7c0;
-    z-index: 1; 
-	} 
+  // padding: 3rem 3rem 3rem 0rem;
+  padding: 4rem;
+	// &:after {
+	// 	content: '';
+	// 	position: absolute;
+	// 	left: 20px;
+  //   top: 35px;
+  //   height: 92%;
+  //   width: 95%;
+  //   background-color: #d9a7c0;
+  //   z-index: 1; 
+	// } 
 } 
 .featured-items {
 	height: 3rem;
@@ -122,8 +159,8 @@ button {
 	font-family: 'PlayFairRegular';
 }
 .hatch-link {
-	transition: all 300ms;
 	& h1 {
+	  transition: all 300ms;
 		color: #e4a73a;
 	}
 	cursor: pointer;
@@ -132,6 +169,17 @@ button {
 			color: #ac335e;
 		}
 	}
+}
+.footer-links-nav {
+  max-width: 40rem;
+  font-family: 'PlayFairRegular', serif;
+  padding: 4rem 0;
+  & a {
+	  transition: all 300ms;
+    &:hover {
+      color: #ac335e;
+    }
+  }
 }
 footer {
 	@media screen and (max-width: 425px) {
@@ -372,8 +420,8 @@ footer {
     }
     grid-gap: 1.5rem;
 		.member-forms {
-			display: flex;
-    	align-items: center;
+			// display: flex;
+    		// align-items: center;
         @media screen and (min-width: 768px) and (max-width: 1024px) {
             padding-left: 2rem;
         }
@@ -483,3 +531,18 @@ footer {
   // display: none;
   display: block;
 }
+
+.parallax {
+	object-fit: contain;
+	/* The image used */
+	// background-image: url("img_parallax.jpg");
+
+	/* Set a specific height */
+	height: 500px;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  }

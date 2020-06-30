@@ -34,7 +34,9 @@
   <div class="container mx-auto">
     <div class="subscribe">
       <div class="subscribe-image">
-        <img src="/img/natural-blueprint.png" alt="" />
+        <img
+          src="http://hatchessentials.com/wp-api/wp-content/uploads/2020/06/subscribe_new.jpg"
+          alt="" />
       </div>
       <div class="subscribe-content">
         <div class="content">
