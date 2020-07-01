@@ -211,6 +211,12 @@ textarea {
  * 2. Remove the padding in IE 10.
  */
 
+
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
@@ -509,8 +515,16 @@ img {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .mx-auto {
@@ -526,8 +540,24 @@ img {
   margin-top: 1.25rem;
 }
 
+.mr-5 {
+  margin-right: 1.25rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .px-5 {
@@ -547,12 +577,24 @@ img {
   fill: currentColor;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
 }
 
 .capitalize {
   text-transform: capitalize;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+
+.w-64 {
+  width: 16rem;
 }
 
 .transform {

@@ -374,19 +374,11 @@ footer {
   }
 
   #sapper {
-  	::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-		  color: #fff;
-		  opacity: 1; /* Firefox */
-		}
-
-		:-ms-input-placeholder { /* Internet Explorer 10-11 */
-		  color: #fff;
-		}
-
-		::-ms-input-placeholder { /* Microsoft Edge */
-		  color: #fff;
-		}
-		input {
+	::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+		color: #fff;
+		opacity: 1; /* Firefox */
+	}
+	input {
       transition: all 300ms;
       height: 3.5rem;
       width: 100%;
@@ -394,13 +386,37 @@ footer {
     textarea, input {
       border-radius: 6px;
       background-color: transparent;
-      border: 1px solid #fff; 
-    }
-    textarea {
-    	width: 100%;
-    	height: 100%;
+    //   border: 1px solid #fff; 
     }
   }
+//   #sapper {
+  	// ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	// 	  color: #fff;
+	// 	  opacity: 1; /* Firefox */
+	// 	}
+
+	// 	:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	// 	  color: #fff;
+	// 	}
+
+	// 	::-ms-input-placeholder { /* Microsoft Edge */
+	// 	  color: #fff;
+	// 	}
+	// 	input {
+    //   transition: all 300ms;
+    //   height: 3.5rem;
+    //   width: 100%;
+    // }
+    // textarea, input {
+    //   border-radius: 6px;
+    //   background-color: transparent;
+    //   border: 1px solid #fff; 
+    // }
+    // textarea {
+    // 	width: 100%;
+    // 	height: 100%;
+    // }
+//   }
 
 .content-wrapper {
   max-width: 80rem;

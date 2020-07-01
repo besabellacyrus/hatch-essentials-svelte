@@ -1,5 +1,7 @@
 <script>
   import { onMount } from "svelte";
+  import SocialMediaIcons from "../page_elements/SocialMediaIcons.svelte";
+
   // IGQVJVU0FzeFlmQ3RCS3VrbnJiZA3lpQ1p4M0VjcXRvYVBWdHBlQlpHRmROZAkx1ZAmRLVlM5LW9qMVdJdGk3WDNZAZAlpDeVEwbDRrRHJ2dHNiS2dxQ3pTenRJbGhzaGUxel9vcUlPSGRR
   onMount(() => {
     var feed = new Instafeed({
@@ -39,6 +41,7 @@
         Follow me
         <b>@hatchessentials</b>
       </p>
+      <SocialMediaIcons />
     </div>
   </div>
   <div id="instagramfeed" class="instagram-items" />

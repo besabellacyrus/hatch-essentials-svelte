@@ -97,12 +97,12 @@ h1 {
     font-size: 3rem;
     letter-spacing: .05em;
     line-height: 1.2em;
+    white-space: pre-wrap;
   }
 }
 
 h2 { 
-  color: $h2-color;
-  white-space: pre-wrap;
+  color: $h2-color; 
   font-family: 'PlayFairBold', serif;
   font-weight: bold;
   font-style: normal;
@@ -111,12 +111,12 @@ h2 {
   @media screen and (max-width: 640px) {
     font-size: 3rem;
     max-width: 100%; 
+    white-space: pre-wrap;
   }
 }
 
 h3 {
   color: $h3-color;
-  white-space: pre-wrap;
   max-width: 60%; 
   font-family: 'MontserratRegular', sans-serif;
   font-weight: 300;
@@ -124,6 +124,7 @@ h3 {
   @media screen and (max-width: 640px) {
     font-size: 2rem;
     max-width: 100%; 
+    white-space: pre-wrap;
   }
 }
 main {

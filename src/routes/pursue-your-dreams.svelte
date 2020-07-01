@@ -22,6 +22,7 @@
   import BecomeMember from "../components/page_elements/BecomeMember.svelte";
 
   export let cache;
+  export let slug;
   restore(client, PAGE, cache.data);
   // TODO Uncommenting this part triggers a 500 error.
   // setClient(client);
