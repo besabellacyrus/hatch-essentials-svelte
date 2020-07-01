@@ -49,7 +49,7 @@
       @media screen and (max-width: 768px) {
         display: initial;
         grid-template-columns: initial;
-        height: 60rem;
+        height: 40rem;
       }
       form {
         @media screen and (max-width: 768px) {
