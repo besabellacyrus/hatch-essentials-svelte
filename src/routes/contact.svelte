@@ -2,7 +2,7 @@
   import client from "../lib/apollo";
   import { PAGE } from "../queries/page";
 
-  let slug = "pursue-your-dreams";
+  let slug = "contact";
 
   export async function preload() {
     return {
@@ -19,7 +19,6 @@
   import { restore, query } from "svelte-apollo";
   import DynamicBlock from "../components/page_elements/DynamicBlock.svelte";
   import TransitionWrapper from "../components/TransitionWrapper.svelte";
-  import BecomeMember from "../components/page_elements/BecomeMember.svelte";
 
   export let cache;
   restore(client, PAGE, cache.data);
@@ -58,5 +57,3 @@
     {/if}
   {/await}
 </TransitionWrapper>
-
-<BecomeMember />
