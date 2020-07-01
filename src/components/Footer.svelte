@@ -3,10 +3,16 @@
   import Subscribe from "../components/page_elements/Subscribe.svelte";
 </script>
 
+<style lang="scss">
+  .footer-links {
+    width: 100%;
+  }
+</style>
+
 <div class="spacer" />
 <Subscribe />
 <div class="container mx-auto footer-links-nav">
-  <div class="flex justify-between">
+  <div class="footer-links text-center md:flex md:justify-between">
     <span>
       <a href="/essential-oils-101/#faq_section">FAQ</a>
     </span>

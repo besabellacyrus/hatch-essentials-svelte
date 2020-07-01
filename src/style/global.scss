@@ -334,7 +334,7 @@ footer {
       		padding: 4rem 1rem;
       	}
       }
-      .subscribe-form {
+      .formkit-field {
         & form {
         	color: #fff;
           display: grid;
@@ -412,13 +412,13 @@ footer {
 	}
 	.become-a-member {
 		display: grid;
-    grid-template-columns: 1fr 1fr;
-    @media screen and (max-width: 768px) {
-    	display: flex;
-  		flex-direction: column-reverse;
-    	grid-template-columns: initial;
-    }
-    grid-gap: 1.5rem;
+    	grid-template-columns: 1fr 1fr;
+		@media screen and (max-width: 768px) {
+			display: flex;
+			flex-direction: column-reverse;
+			grid-template-columns: initial;
+		}
+		grid-gap: 1.5rem;
 		.member-forms {
 			// display: flex;
     		// align-items: center;
@@ -428,7 +428,7 @@ footer {
     	@media screen and (max-width: 768px) {
     		display: initial;
 	    	grid-template-columns: initial;
-    		height: 60rem;
+			height: 34rem;
 	    }
 	    form {
 	    	@media screen and (max-width: 768px) {

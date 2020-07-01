@@ -110,6 +110,7 @@ h2 {
   max-width: 60%; 
   @media screen and (max-width: 640px) {
     font-size: 3rem;
+    max-width: 100%; 
   }
 }
 
@@ -122,6 +123,7 @@ h3 {
   font-size: 2.2rem;
   @media screen and (max-width: 640px) {
     font-size: 2rem;
+    max-width: 100%; 
   }
 }
 main {

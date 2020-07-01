@@ -4,7 +4,7 @@
 
   let slug = "home";
 
-  export async function preload() { 
+  export async function preload() {
     return {
       cache: await client.query({
         query: PAGE,
@@ -16,8 +16,8 @@
 
 <script>
   import { restore, query } from "svelte-apollo";
-  import DynamicBlock from "../components/page_elements/DynamicBlock.svelte"; 
-  import TransitionWrapper from '../components/TransitionWrapper.svelte';
+  import DynamicBlock from "../components/page_elements/DynamicBlock.svelte";
+  import TransitionWrapper from "../components/TransitionWrapper.svelte";
 
   export let cache;
   restore(client, PAGE, cache.data);
@@ -28,16 +28,20 @@
   const pages = query(client, {
     query: PAGE,
     variables: { slug }
-  }); 
+  });
 </script>
 
-<style> 
+<style>
+
 </style>
 
-<svelte:head> 
+<svelte:head>
   {#if cache}
-    { @html cache.data['hatch_PageBy']['head_tags']['headTags'] }
+    {@html cache.data['hatch_PageBy']['head_tags']['headTags']}
   {/if}
+  <script src="https://f.convertkit.com/ckjs/ck.5.js">
+
+  </script>
 </svelte:head>
 
 <TransitionWrapper>
@@ -51,5 +55,5 @@
     {:else}
       <p>ERROR!!</p>
     {/if}
-{/await}
+  {/await}
 </TransitionWrapper>

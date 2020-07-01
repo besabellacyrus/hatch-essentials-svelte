@@ -48,27 +48,13 @@
             <br />
             <!-- 3 WAYS “BEING CRUNCHY” CAN CHANGE YOUR LIFE FOR THE BETTER -->
           </p>
-          <div class="subscribe-form">
-            <form on:submit|preventDefault={handleSubmit}>
-              <input
-                type="text"
-                id="name"
-                bind:value={$subscriber.name}
-                placeholder="Your Name Here"
-                required />
-              <input
-                type="email"
-                id="email"
-                bind:value={$subscriber.email}
-                placeholder="Your Email Here"
-                required />
-              <button>
-                <em>Download Now</em>
-              </button>
-            </form>
-            {#if sent}
-              <p>Thank You for your subscription</p>
-            {/if}
+          <div>
+            <script
+              async
+              data-uid="71d5fb048c"
+              src="https://hatchessentials-naturalhealthblueprint.ck.page/71d5fb048c/index.js">
+
+            </script>
           </div>
         </div>
       </div>
