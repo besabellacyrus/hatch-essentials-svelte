@@ -303,7 +303,7 @@ footer {
       	height: 36rem;
     		margin: 0 auto;
       }
-      @media screen and (max-width: 425px) {
+      @media screen and (max-width: 768px) {
       	grid-template-rows: 0.3fr 1fr;
       	grid-template-columns: initial;
       	padding: 2rem;
@@ -330,8 +330,10 @@ footer {
       justify-content: center;
       align-items: center;
       & .content {
+        padding-left: 2rem;
+        padding-right: 2rem;
       	@media screen and (max-width: 1024px){
-      		padding: 4rem 1rem;
+      		// padding: 4rem 1rem;
       	}
       }
       .subscribe-form {
@@ -437,14 +439,14 @@ footer {
 		grid-gap: 1.5rem;
 		.member-forms {
 			// display: flex;
-    		// align-items: center;
-        @media screen and (min-width: 768px) and (max-width: 1024px) {
-            padding-left: 2rem;
-        }
+    	// align-items: center;
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+          padding-left: 2rem;
+      }
     	@media screen and (max-width: 768px) {
     		display: initial;
 	    	grid-template-columns: initial;
-			height: 34rem;
+			  height: 34rem;
 	    }
 	    form {
 	    	@media screen and (max-width: 768px) {
@@ -561,4 +563,10 @@ footer {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+  }
+
+  .pursue-svg {
+    @media screen and (max-width: 425px) {
+      height: 21rem;
+    }
   }

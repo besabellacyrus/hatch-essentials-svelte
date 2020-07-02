@@ -34,14 +34,14 @@
   .become-a-member {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 552px) {
       display: flex;
       flex-direction: column-reverse;
       grid-template-columns: initial;
     }
     grid-gap: 1.5rem;
     .member-forms {
-      display: flex;
+      // display: flex;
       // align-items: center;
       @media screen and (min-width: 768px) and (max-width: 1024px) {
         padding-left: 2rem;
@@ -50,6 +50,10 @@
         display: initial;
         grid-template-columns: initial;
         height: 40rem;
+      }
+      @media screen and (min-width: 425px) and (max-width: 523px) {
+        // margin-bottom: 6rem;
+        // padding: 5rem;
       }
       form {
         @media screen and (max-width: 768px) {
