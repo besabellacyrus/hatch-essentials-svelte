@@ -6,7 +6,7 @@
     if (!sent) {
       let formData = new FormData();
       formData.append("your-name", event.target.name.value);
-      formData.append("your-email", event.target.location.value);
+      formData.append("your-email", event.target.email.value);
       formData.append("your-message", event.target.message.value);
 
       const res = await fetch(
@@ -177,22 +177,24 @@
               free offer.
             </small>
           </p>
-          <form>
+          <form on:submit|preventDefault={handleSubmit}>
             <div class="upper">
               <input
                 type="text"
                 id="name"
+                name="name"
                 bind:value={$subscriber.name}
                 placeholder="Your Name Here" />
               <input
                 type="email"
                 id="email"
+                name="email"
                 bind:value={$subscriber.email}
                 placeholder="Your Email Here" />
             </div>
             <div class="lower mb-10">
               <textarea
-                name=""
+                name="message"
                 id="message"
                 cols="30"
                 rows="10"

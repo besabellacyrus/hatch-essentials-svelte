@@ -9,12 +9,14 @@
       cache: await client.query({
         query: PAGE,
         variables: { slug }
-      })
+      }),
+      slug
     };
   }
 </script>
 
 <script>
+  import { contact } from "../store/contact.js";
   import { restore, query } from "svelte-apollo";
   import DynamicBlock from "../components/page_elements/DynamicBlock.svelte";
   import TransitionWrapper from "../components/TransitionWrapper.svelte";
@@ -23,6 +25,39 @@
 
   export let cache;
   export let slug;
+
+  let essential_oil = "no";
+  let living_member = "no";
+  let sent = false;
+
+  async function handleSubmit(event) {
+    console.log({ event: essential_oil, living_member });
+    if (!sent) {
+      let formData = new FormData();
+      formData.append("your-first-name", event.target.first_name.value);
+      formData.append("your-last-name", event.target.last_name.value);
+      formData.append("your-email", event.target.email.value);
+      formData.append("your-living-member", living_member);
+      formData.append("your-essential-oil", essential_oil);
+      formData.append("your-message", event.target.message.value);
+      const res = await fetch(
+        "http://hatchessentials.com/wp-api/wp-json/contact-form-7/v1/contact-forms/106/feedback",
+        {
+          method: "POST",
+          body: formData
+        }
+      ).then(e => {
+        if (e.statusText === "OK") {
+          sent = true;
+          $contact.first_name = "";
+          $contact.last_name = "";
+          $contact.email = "";
+          $contact.message = "";
+        }
+      });
+    }
+  }
+
   restore(client, PAGE, cache.data);
   // TODO Uncommenting this part triggers a 500 error.
   // setClient(client);
@@ -103,48 +138,81 @@
   </div>
 </div>
 <div class="container mx-auto contact-form">
-  <form action="" class="px-5">
+  <form on:submit|preventDefault={handleSubmit} class="px-5">
     <label for="">Name*</label>
     <div class="flex justify-around mb-5">
-      <input class="mr-5" type="text" placeholder="First Name" required />
-      <input type="text" placeholder="Last Name" required />
+      <input
+        class="mr-5"
+        type="text"
+        name="first_name"
+        placeholder="First Name"
+        bind:value={$contact.first_name}
+        required />
+      <input
+        type="text"
+        name="last_name"
+        placeholder="Last Name"
+        bind:value={$contact.last_name}
+        required />
     </div>
     <label for="">Email*</label>
     <div class="flex justify-around">
-      <input type="email" placeholder="Email" required />
+      <input
+        type="email"
+        name="email"
+        placeholder="Email"
+        bind:value={$contact.email}
+        required />
     </div>
     <div class="contact-checkbox">
       <p class="text-left">Are you familiar with essential oils?</p>
-      <input type="radio" id="essential-yes" name="essential" value="Yes" />
+      <input
+        type="radio"
+        id="essential-yes"
+        name="essential_oil"
+        bind:group={essential_oil}
+        value="yes" />
       <label for="essential-yes">Yes</label>
       <br />
       <input
         type="radio"
         id="essential-no"
-        checked="checked"
-        name="essential"
-        value="No" />
+        name="essential_oil"
+        bind:group={essential_oil}
+        value="no" />
       <label for="essential-no">No</label>
     </div>
     <div class="contact-checkbox">
       <p class="text-left">Are you a Young Living Member?</p>
-      <input type="radio" id="member-yes" name="member" value="Yes" />
+      <input
+        type="radio"
+        id="member-yes"
+        name="living_member"
+        bind:group={living_member}
+        value="yes" />
       <label for="member-yes">Yes</label>
       <br />
       <input
         type="radio"
         id="member-no"
-        checked="checked"
-        name="member"
-        value="No" />
+        name="living_member"
+        bind:group={living_member}
+        value="no" />
       <label for="member-no">No</label>
     </div>
     <div class="message-box">
       <p class="text-left">Message*</p>
-      <textarea id="message" required />
+      <textarea
+        id="message"
+        name="message"
+        bind:value={$contact.message}
+        required />
     </div>
     <div class="mt-10 flex align-middle justify-center">
       <button>Send It</button>
     </div>
   </form>
+  {#if sent}
+    <p>Thank you!</p>
+  {/if}
 </div>
