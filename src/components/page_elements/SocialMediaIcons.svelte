@@ -7,7 +7,7 @@
 </style>
 
 <div class="w-64 mx-auto flex justify-between mt-5">
-  <a href="#">
+  <a href="https://www.facebook.com/hatchessentials">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="28"
@@ -61,7 +61,7 @@
       </g>
     </svg>
   </a>
-  <a href="#">
+  <a href="http://m.me/hatchessentials">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="30"
@@ -106,7 +106,7 @@
       </g>
     </svg>
   </a>
-  <a href="#">
+  <a href="https://www.instagram.com/hatchessentials/">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="28"

@@ -1,4 +1,4 @@
-import{S as t,i as e,s as n,r as o,e as l,b as c,d as s,f as a,j as r,l as u,v as h,u as i,y as d,z as f,k as g,a as p,g as m,A as $,H as b,c as k,q as v,h as x,m as y,t as E,n as R,o as C,p as I,w as P,x as q}from"./client.1f298474.js";import{s as w,c as B,r as N,q as _}from"./svelte-apollo.es.e3e47057.js";import{P as j,D as O}from"./DynamicBlock.348268da.js";import{T}from"./TransitionWrapper.20cc1260.js";const U=w`
+import{S as t,i as e,s as n,r as o,e as l,b as c,d as s,f as a,j as r,l as u,v as h,u as i,y as d,z as f,k as g,a as p,g as m,A as $,H as b,c as k,q as v,h as x,m as y,t as E,n as R,o as C,p as I,w as P,x as q}from"./client.b1f3023d.js";import{s as w,c as B,r as N,q as _}from"./svelte-apollo.es.ea13ac0e.js";import{P as j,D as O}from"./DynamicBlock.c25447d8.js";import{T}from"./TransitionWrapper.83147885.js";const U=w`
   query MyQuery {
     posts {
       nodes {
