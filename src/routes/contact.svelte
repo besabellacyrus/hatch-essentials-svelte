@@ -130,6 +130,18 @@
   </h3>
   <h3 class="mx-auto mt-10">Let’s get social</h3>
   <SocialMediaIcons />
+  <div class="mt-5">
+    <h3 class="mx-auto">
+      Want to connect with my community? Join my FREE Facebook Group
+    </h3>
+    <div class="hatch-btn flex justify-center">
+      <a
+        href="https://www.facebook.com/groups/2959941810767391/?ref=share"
+        target="_blank">
+        <button>Join Us</button>
+      </a>
+    </div>
+  </div>
   <div class="mt-10 text-center px-5">
     <h3 class="mx-auto">
       Got some specific questions for me? Leave a message and I’ll get back to
