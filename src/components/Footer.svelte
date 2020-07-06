@@ -7,6 +7,14 @@
   .footer-links {
     width: 100%;
   }
+  .yl-logo {
+    height: 7rem;
+    margin-bottom: 5rem;
+    img {
+      height: 100%;
+      margin: 0 auto;
+    }
+  }
 </style>
 
 <div class="spacer" />
@@ -35,6 +43,11 @@
     <span>
       <a href="/privacy-policy">Privacy</a>
     </span>
+  </div>
+</div>
+<div class="container mx-auto">
+  <div class="yl-logo">
+    <img src="/img/yl_logo.png" alt="" />
   </div>
 </div>
 <footer>
