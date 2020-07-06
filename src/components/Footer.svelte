@@ -47,7 +47,7 @@
 </div>
 <div class="container mx-auto">
   <div class="yl-logo">
-    <img src="/img/yl_logo.png" alt="" />
+    <img src="/img/yl_logo.png" alt="www.youngliving.com logo" />
   </div>
 </div>
 <footer>
