@@ -41,7 +41,7 @@
       formData.append("your-essential-oil", essential_oil);
       formData.append("your-message", event.target.message.value);
       const res = await fetch(
-        "http://hatchessentials.com/wp-api/wp-json/contact-form-7/v1/contact-forms/106/feedback",
+        "https://hatchessentials.com/wp-api/wp-json/contact-form-7/v1/contact-forms/106/feedback",
         {
           method: "POST",
           body: formData

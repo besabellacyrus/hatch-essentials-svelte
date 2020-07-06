@@ -10,7 +10,7 @@
       formData.append("your-message", event.target.message.value);
 
       const res = await fetch(
-        "http://hatchessentials.com/wp-api/wp-json/contact-form-7/v1/contact-forms/89/feedback",
+        "https://hatchessentials.com/wp-api/wp-json/contact-form-7/v1/contact-forms/89/feedback",
         {
           method: "POST",
           body: formData
@@ -154,7 +154,7 @@
     <div class="become-a-member">
       <div class="member-forms">
         <img
-          src="http://hatchessentials.com/wp-api/wp-content/uploads/2020/06/BECOME-A-MEMBER.png"
+          src="https://hatchessentials.com/wp-api/wp-content/uploads/2020/06/BECOME-A-MEMBER.png"
           alt="hatchessentials become a member" />
       </div>
       <div class="become-a-member-content">

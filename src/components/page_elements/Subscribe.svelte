@@ -10,7 +10,7 @@
       formData.append("your-email", event.target.email.value);
 
       const res = await fetch(
-        "http://hatchessentials.com/wp-api/wp-json/contact-form-7/v1/contact-forms/86/feedback",
+        "https://hatchessentials.com/wp-api/wp-json/contact-form-7/v1/contact-forms/86/feedback",
         {
           method: "POST",
           body: formData
@@ -35,7 +35,7 @@
     <div class="subscribe">
       <div class="subscribe-image">
         <img
-          src="http://hatchessentials.com/wp-api/wp-content/uploads/2020/06/subscribe_new.jpg"
+          src="https://hatchessentials.com/wp-api/wp-content/uploads/2020/06/subscribe_new.jpg"
           alt="" />
       </div>
       <div class="subscribe-content">
